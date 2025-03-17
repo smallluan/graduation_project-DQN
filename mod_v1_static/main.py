@@ -6,7 +6,20 @@ import numpy as np
 import random
 
 # 全局参数
-num_episodes = 50  # 训练轮数
+num_episodes = 1000  # 训练轮数
+gamma = 0.99  # 折扣因子
+epsilon = 0.1  # 探索率
+learning_rate = 0.001  # 学习率
+
+# 奖励相关参数
+reward_invalid_action = -0.5  # 无效动作奖励
+reward_pass_with_valid = -0.5  # 有有效动作时 pass 的奖励
+reward_pass_without_valid = -0.1  # 无有效动作时 pass 的奖励
+reward_single_card = 0.1  # 出单牌奖励
+reward_pair_card = 0.5  # 出对子奖励
+reward_triple_with_single = 0.7  # 出三带一奖励
+reward_player_win = -1  # 玩家获胜奖励
+reward_ai_win = 1  # AI 获胜奖励
 
 # ---------------------- 预定义所有可能的动作列表 ----------------------
 # 必须与训练模型时的动作列表完全一致！
@@ -105,7 +118,7 @@ class CardGameEnv:
         if self.current_player == 'player':
             if self.just_got_turn and action == 'pass':
                 print("You just got the turn, you can't pass.")
-                reward = -0.5
+                reward = reward_invalid_action
             else:
                 # 生成有效动作
                 valid_actions = []
@@ -123,7 +136,7 @@ class CardGameEnv:
                         valid_single = [str(c) for c in self.player_hand if c > self.last_played]
                         valid_actions = valid_single
                     else:
-                        # 初始状态或上一轮pass，可以出单牌、对子或三带一
+                        # 初始状态或上一轮 pass，可以出单牌、对子或三带一
                         valid_single = [str(c) for c in self.player_hand if c > self.last_played]
                         valid_triple = [f"{t}{t}{t}{s}" for t in self._find_triples(self.player_hand) for s in
                                         self.player_hand if s != t]
@@ -137,7 +150,7 @@ class CardGameEnv:
                 if action == 'pass':
                     if valid_actions:
                         print("You have valid cards, you can't pass.")
-                        reward = -0.5
+                        reward = reward_pass_with_valid
                     else:
                         self.last_played = 0
                         self.last_played_pair = False
@@ -145,7 +158,7 @@ class CardGameEnv:
                         self.current_player = 'ai'
                         self.just_got_turn = True
                         self.last_action_was_pass = True
-                        reward = -0.1
+                        reward = reward_pass_without_valid
                 else:
                     # 处理出牌逻辑
                     try:
@@ -154,16 +167,16 @@ class CardGameEnv:
                             card = int(str(action)[0])
                             if self.player_hand.count(card) < 2:
                                 print(f"你没有两张 {card}！")
-                                reward = -0.5
+                                reward = reward_invalid_action
                             elif self.last_played_triple:
                                 print("必须出更大的三带一！")
-                                reward = -0.5
+                                reward = reward_invalid_action
                             elif self.last_played_pair and card <= self.last_played:
                                 print("必须出更大的对子！")
-                                reward = -0.5
+                                reward = reward_invalid_action
                             elif self.last_played > 0 and card <= self.last_played:
                                 print("必须大于上一轮的出牌！")
-                                reward = -0.5
+                                reward = reward_invalid_action
                             else:
                                 self.player_hand.remove(card)
                                 self.player_hand.remove(card)
@@ -171,10 +184,10 @@ class CardGameEnv:
                                 self.last_played_pair = True
                                 self.last_played_triple = False
                                 self.last_action_was_pass = False
-                                reward = 0.5
+                                reward = reward_pair_card
                                 done = len(self.player_hand) == 0
                                 if done:
-                                    reward = -1
+                                    reward = reward_player_win
                                 else:
                                     self.current_player = 'ai'
                                     self.just_got_turn = True
@@ -184,13 +197,13 @@ class CardGameEnv:
                             single_card = int(str(action)[3])
                             if self.player_hand.count(triple_card) < 3 or single_card not in self.player_hand:
                                 print(f"你没有三张 {triple_card} 或者没有 {single_card}！")
-                                reward = -0.5
+                                reward = reward_invalid_action
                             elif self.last_played_triple and triple_card <= self.last_played:
                                 print("必须出更大的三带一！")
-                                reward = -0.5
+                                reward = reward_invalid_action
                             elif self.last_played_pair or (self.last_played > 0 and not self.last_played_triple):
                                 print("上一轮出的是对子或单牌，不能出三带一！")
-                                reward = -0.5
+                                reward = reward_invalid_action
                             else:
                                 self.player_hand.remove(triple_card)
                                 self.player_hand.remove(triple_card)
@@ -200,10 +213,10 @@ class CardGameEnv:
                                 self.last_played_pair = False
                                 self.last_played_triple = True
                                 self.last_action_was_pass = False
-                                reward = 0.7
+                                reward = reward_triple_with_single
                                 done = len(self.player_hand) == 0
                                 if done:
-                                    reward = -1
+                                    reward = reward_player_win
                                 else:
                                     self.current_player = 'ai'
                                     self.just_got_turn = True
@@ -212,35 +225,35 @@ class CardGameEnv:
                             card = int(action)
                             if card not in self.player_hand:
                                 print(f"你没有 {card}！")
-                                reward = -0.5
+                                reward = reward_invalid_action
                             elif self.last_played_triple:
                                 print("必须出更大的三带一！")
-                                reward = -0.5
+                                reward = reward_invalid_action
                             elif self.last_played_pair:
                                 print("必须出更大的对子！")
-                                reward = -0.5
+                                reward = reward_invalid_action
                             elif card <= self.last_played:
                                 print("必须大于上一轮的出牌！")
-                                reward = -0.5
+                                reward = reward_invalid_action
                             else:
                                 self.player_hand.remove(card)
                                 self.last_played = card
                                 self.last_played_pair = False
                                 self.last_played_triple = False
                                 self.last_action_was_pass = False
-                                reward = 0.1
+                                reward = reward_single_card
                                 done = len(self.player_hand) == 0
                                 if done:
-                                    reward = -1
+                                    reward = reward_player_win
                                 else:
                                     self.current_player = 'ai'
                                     self.just_got_turn = True
                     except ValueError as e:
                         print(f"输入格式错误: {e}")
-                        reward = -0.5
+                        reward = reward_invalid_action
                     except Exception as e:
                         print(f"发生错误: {str(e)}")
-                        reward = -0.5
+                        reward = reward_invalid_action
         else:
             # AI 的逻辑（类似玩家逻辑）
             valid_actions = []
@@ -268,7 +281,7 @@ class CardGameEnv:
             if action == 'pass':
                 if valid_actions:
                     print("AI has valid cards, it can't pass.")
-                    reward = -0.5
+                    reward = reward_pass_with_valid
                 else:
                     self.last_played = 0
                     self.last_played_pair = False
@@ -276,23 +289,23 @@ class CardGameEnv:
                     self.current_player = 'player'
                     self.just_got_turn = True
                     self.last_action_was_pass = True
-                    reward = -0.1
+                    reward = reward_pass_without_valid
             else:
                 # 处理 AI 出牌逻辑
                 if len(action) == 2 and action[0] == action[1]:
                     # 出对子
                     card = int(action[0])
                     if self.ai_hand.count(card) < 2:
-                        reward = -0.5
+                        reward = reward_invalid_action
                     elif self.last_played_triple:
                         print("AI 必须出更大的三带一！")
-                        reward = -0.5
+                        reward = reward_invalid_action
                     elif self.last_played_pair and card <= self.last_played:
                         print("AI 必须出更大的对子！")
-                        reward = -0.5
+                        reward = reward_invalid_action
                     elif self.last_played > 0 and card <= self.last_played:
                         print("AI 必须大于上一轮的出牌！")
-                        reward = -0.5
+                        reward = reward_invalid_action
                     else:
                         self.ai_hand.remove(card)
                         self.ai_hand.remove(card)
@@ -300,10 +313,10 @@ class CardGameEnv:
                         self.last_played_pair = True
                         self.last_played_triple = False
                         self.last_action_was_pass = False
-                        reward = 0.5
+                        reward = reward_pair_card
                         done = len(self.ai_hand) == 0
                         if done:
-                            reward = 1
+                            reward = reward_ai_win
                         else:
                             self.current_player = 'player'
                             self.just_got_turn = True
@@ -312,13 +325,13 @@ class CardGameEnv:
                     triple_card = int(action[0])
                     single_card = int(action[3])
                     if self.ai_hand.count(triple_card) < 3 or single_card not in self.ai_hand:
-                        reward = -0.5
+                        reward = reward_invalid_action
                     elif self.last_played_triple and triple_card <= self.last_played:
                         print("AI 必须出更大的三带一！")
-                        reward = -0.5
+                        reward = reward_invalid_action
                     elif self.last_played_pair or (self.last_played > 0 and not self.last_played_triple):
                         print("AI 上一轮出的是对子或单牌，不能出三带一！")
-                        reward = -0.5
+                        reward = reward_invalid_action
                     else:
                         self.ai_hand.remove(triple_card)
                         self.ai_hand.remove(triple_card)
@@ -328,10 +341,10 @@ class CardGameEnv:
                         self.last_played_pair = False
                         self.last_played_triple = True
                         self.last_action_was_pass = False
-                        reward = 0.7
+                        reward = reward_triple_with_single
                         done = len(self.ai_hand) == 0
                         if done:
-                            reward = 1
+                            reward = reward_ai_win
                         else:
                             self.current_player = 'player'
                             self.just_got_turn = True
@@ -339,26 +352,26 @@ class CardGameEnv:
                     # 出单牌
                     card = int(action)
                     if card not in self.ai_hand:
-                        reward = -0.5
+                        reward = reward_invalid_action
                     elif self.last_played_triple:
                         print("AI 必须出更大的三带一！")
-                        reward = -0.5
+                        reward = reward_invalid_action
                     elif self.last_played_pair:
                         print("AI 必须出更大的对子！")
-                        reward = -0.5
+                        reward = reward_invalid_action
                     elif card <= self.last_played:
                         print("AI 必须大于上一轮的出牌！")
-                        reward = -0.5
+                        reward = reward_invalid_action
                     else:
                         self.ai_hand.remove(card)
                         self.last_played = card
                         self.last_played_pair = False
                         self.last_played_triple = False
                         self.last_action_was_pass = False
-                        reward = 0.1
+                        reward = reward_single_card
                         done = len(self.ai_hand) == 0
                         if done:
-                            reward = 1
+                            reward = reward_ai_win
                         else:
                             self.current_player = 'player'
                             self.just_got_turn = True
@@ -370,7 +383,7 @@ class CardGameEnv:
         return next_state, reward, done
 
 # 训练 DQN
-def train_dqn(env, num_episodes=num_episodes, gamma=0.99, epsilon=0.1, learning_rate=0.001):
+def train_dqn(env, num_episodes=num_episodes, gamma=gamma, epsilon=epsilon, learning_rate=learning_rate):
     print("Training started...")
     input_size = len(env._get_state())
     model = DQN(input_size)
@@ -604,7 +617,8 @@ if __name__ == "__main__":
     # 训练模型
     trained_model = train_dqn(env)
     # 保存模型
-    model_path = "models/model"+str(num_episodes)+".pth"
+    model_path = "models/model_"+str(num_episodes)+".pth"
+    os.makedirs(os.path.dirname(model_path), exist_ok=True)
     save_model(trained_model, model_path)
     print("Model saved successfully.")
 
@@ -614,4 +628,4 @@ if __name__ == "__main__":
 
     # 开始游戏
     # while True:
-        # play_game(env, loaded_model)
+    #     play_game(env, loaded_model)

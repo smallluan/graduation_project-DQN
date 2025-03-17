@@ -280,16 +280,16 @@ def setData(l):
 
 if __name__ == "__main__":
     # 初始化环境
-    if not os.path.exists('data.py'):
+    if not os.path.exists('test_data/data.py'):
         setData(l)
-    from data import hand_data
+    from test_data.data import hand_data
 
     # 示例初始化
     env = CardGameEnv([], [])  # 手牌通过reset设置
     input_size = len(env._get_state()[0])
 
     # 加载模型（需确保模型使用新动作列表训练）
-    model1 = load_model(input_size, "models/model50.pth")
-    model2 = load_model(input_size, "models/model10000.pth")
+    model1 = load_model(input_size, "models/model1000.pth")
+    model2 = load_model(input_size, "models/model5000.pth")
 
     play_games(env, model1, model2)
