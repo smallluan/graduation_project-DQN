@@ -22,9 +22,9 @@ OUTPUT_SIZE = len(ALL_ACTIONS)  # 模型输出层大小与动作数量一致
 class DQN(nn.Module):
     def __init__(self, input_size):
         super(DQN, self).__init__()
-        self.fc1 = nn.Linear(input_size, 128)
-        self.fc2 = nn.Linear(128, 128)
-        self.fc3 = nn.Linear(128, OUTPUT_SIZE)  # 修改输出层大小
+        self.fc1 = nn.Linear(input_size, 1024)
+        self.fc2 = nn.Linear(1024, 1024)
+        self.fc3 = nn.Linear(1024, OUTPUT_SIZE)  # 修改输出层大小
 
     def forward(self, x):
         x = torch.relu(self.fc1(x))

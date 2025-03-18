@@ -6,7 +6,7 @@ import numpy as np
 import random
 
 # 全局参数
-num_episodes = 1000  # 训练轮数
+num_episodes = 100  # 训练轮数
 gamma = 0.99  # 折扣因子
 epsilon = 0.1  # 探索率
 learning_rate = 0.001  # 学习率
@@ -36,9 +36,9 @@ OUTPUT_SIZE = len(ALL_ACTIONS)  # 模型输出层大小与动作数量一致
 class DQN(nn.Module):
     def __init__(self, input_size):
         super(DQN, self).__init__()
-        self.fc1 = nn.Linear(input_size, 128)
-        self.fc2 = nn.Linear(128, 128)
-        self.fc3 = nn.Linear(128, OUTPUT_SIZE)  # 修改输出层大小
+        self.fc1 = nn.Linear(input_size, 1024)
+        self.fc2 = nn.Linear(1024, 1024)
+        self.fc3 = nn.Linear(1024, OUTPUT_SIZE)  # 修改输出层大小
 
     def forward(self, x):
         x = torch.relu(self.fc1(x))
@@ -617,7 +617,7 @@ if __name__ == "__main__":
     # 训练模型
     trained_model = train_dqn(env)
     # 保存模型
-    model_path = "models/model_"+str(num_episodes)+".pth"
+    model_path = "models/model"+str(num_episodes)+".pth"
     os.makedirs(os.path.dirname(model_path), exist_ok=True)
     save_model(trained_model, model_path)
     print("Model saved successfully.")
