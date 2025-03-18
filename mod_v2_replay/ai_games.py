@@ -1,10 +1,9 @@
 import os
 import random
-
 import torch
 from main import CardGameEnv, DQN, ACTION_TO_INDEX
 
-l = 10
+l = 1000
 
 # 动态加载模型
 def load_model(model_path):
@@ -14,7 +13,6 @@ def load_model(model_path):
     model.load_state_dict(torch.load(model_path))
     model.eval()
     return model
-
 
 # AI决策函数
 def ai_play(model, state, valid_actions):
@@ -38,11 +36,10 @@ def setData(l):
     with open('data.py', 'w') as f:
         f.write(f"hand_data = {hand_data}")
 
-
 # 游戏主循环
 def main():
-    model1_path = "models/model5000.pth"  # 模型路径需与训练保存一致
-    model2_path = "../mod_v2_dynamic/models/model100.pth"
+    model1_path = "models/model10000.pth"  # 模型路径需与训练保存一致
+    model2_path = "models/model100.pth"
 
     model1 = load_model(model1_path)  # 玩家1使用的模型
     model2 = load_model(model2_path)  # 玩家2使用的模型
@@ -86,10 +83,6 @@ def main():
             action = ai_play(current_model, state, valid_actions)
             round_records.append((player_id, action))
 
-            if action != 'pass':
-                if int(action) > 1000:
-                    print(idx, player_id, action)
-
             print(f"{player_id} 出牌: {action}")
 
             # 执行动作
@@ -123,7 +116,6 @@ def main():
     # with open('game_records.json', 'w') as f:
     #     json.dump(stats['rounds'], f, indent=2)
     # print("\n详细记录已保存到 game_records.json")
-
 
 if __name__ == "__main__":
     if not os.path.exists('test_data/data.py'):

@@ -4,7 +4,7 @@ import random
 import torch
 from main import CardGameEnv, DQN, ACTION_TO_INDEX
 
-l = 10
+l = 1000
 
 # 动态加载模型
 def load_model(model_path):
