@@ -38,7 +38,7 @@ def setData(l):
 
 # 游戏主循环
 def main():
-    model1_path = "models/model10000.pth"  # 模型路径需与训练保存一致
+    model1_path = "models/model1000.pth"  # 模型路径需与训练保存一致
     model2_path = "models/model100.pth"
 
     model1 = load_model(model1_path)  # 玩家1使用的模型

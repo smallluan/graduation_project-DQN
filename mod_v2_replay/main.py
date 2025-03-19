@@ -8,12 +8,12 @@ from collections import deque
 import math
 
 # 全局参数
-num_episodes = 10000  # 训练轮数
+num_episodes = 1000  # 训练轮数
 initial_gamma = 1  # 初始折扣因子
-gamma_decay = 0.9999  # 折扣因子衰减率
+gamma_decay = 0.9995  # 折扣因子衰减率
 initial_epsilon = 1.0  # 初始探索率
-epsilon_decay = 0.999  # 探索率衰减率
-epsilon_min = 0.1  # 最小探索率
+epsilon_decay = 0.9999  # 探索率衰减率
+epsilon_min = 0.2  # 最小探索率
 learning_rate = 0.001  # 学习率
 batch_size = 64  # 经验回放批次大小
 memory_capacity = 10000  # 经验回放容量
@@ -576,8 +576,9 @@ class CardGameEnv:
     def _get_valid_actions(self, hand):
         valid_actions = []
 
-        if self.just_got_turn:
-            # 刚获得出牌权，可以出任意合法的牌
+        if self.just_got_turn or self.last_action_was_pass:
+            # 抢占了出牌权，必须出牌，不能 pass
+            # 生成所有合法的出牌动作
             valid_single = [str(c) for c in hand]
             valid_triple = []
             triples = self._find_triples(hand)
@@ -588,7 +589,7 @@ class CardGameEnv:
             valid_pair = [f"{c}{c}" for c in self._find_pairs(hand)]
             valid_actions = valid_single + valid_triple + valid_pair
         else:
-            # 根据上一手牌生成合法动作
+            # 未抢占出牌权，可以出牌或 pass
             if self.last_played_triple:
                 # 必须出更大的三带一
                 valid_actions = self._find_triple_with_single(hand)
@@ -613,6 +614,9 @@ class CardGameEnv:
                             valid_triple.append(f"{triple}{triple}{triple}{single}")
                     valid_pair = [f"{c}{c}" for c in self._find_pairs(hand)]
                     valid_actions = valid_single + valid_triple + valid_pair
+
+            # 未抢占出牌权，允许 pass
+            valid_actions.append('pass')
 
         # 如果没有合法动作，强制 pass
         if not valid_actions:
@@ -740,10 +744,10 @@ def load_model(input_size, model_path):
 if __name__ == "__main__":
     # 训练模型
     env = CardGameEnv()
-    trained_model = train_dqn(env)
+    # trained_model = train_dqn(env)
     model_path = "models/model" + str(num_episodes) + ".pth"
-    os.makedirs(os.path.dirname(model_path), exist_ok=True)
-    save_model(trained_model, model_path)
+    # os.makedirs(os.path.dirname(model_path), exist_ok=True)
+    # save_model(trained_model, model_path)
     print("Model saved successfully.")
 
     # 加载模型用于对战
