@@ -9,46 +9,46 @@ import math
 
 # 全局参数
 num_episodes = 1000  # 训练轮数
-initial_gamma = 1  # 初始折扣因子
-gamma_decay = 0.9995  # 折扣因子衰减率
-initial_epsilon = 1.0  # 初始探索率
-epsilon_decay = 0.9999  # 探索率衰减率
+initial_gamma = 0.99  # 初始折扣因子
+gamma_decay = 0.999  # 折扣因子衰减率
+initial_epsilon = 0.5  # 初始探索率
+epsilon_decay = 0.995  # 探索率衰减率
 epsilon_min = 0.2  # 最小探索率
-learning_rate = 0.001  # 学习率
+learning_rate = 0.0001  # 学习率
 batch_size = 64  # 经验回放批次大小
 memory_capacity = 10000  # 经验回放容量
 target_update_freq = 500  # 目标网络更新频率
 
 # 奖励相关参数
-reward_invalid_action = -100  # 无效动作奖励，惩罚加重
-reward_pass_with_valid = -5  # 有有效动作时 pass 的奖励，惩罚加重
-reward_pass_without_valid = 0  # 无有效动作时 pass 的奖励
-reward_single_card = 10  # 出单牌奖励，适当提高
-reward_pair_card = 20  # 出对子奖励，适当提高
-reward_triple_with_single = 30  # 出三带一奖励，适当提高
-reward_player_win = -100  # 玩家获胜奖励，惩罚加重
-reward_ai_win = 100  # AI 获胜奖励，奖励加重
-reward_pair_win_bonus = 20  # 对子获胜额外奖励，提高
-reward_split_pair_penalty = -3  # 拆对子惩罚，加重
-reward_split_triple_penalty = -3  # 拆三带一惩罚，加重
-reward_pass_avoid_split = 5  # pass避免拆牌的奖励
+reward_invalid_action = -2  # 无效动作奖励，惩罚加重
+reward_pass_with_valid = -1  # 有有效动作时 pass 的奖励，惩罚加重
+reward_pass_without_valid = -0.5  # 无有效动作时 pass 的奖励
+reward_single_card = 1  # 出单牌奖励，适当提高
+reward_pair_card = 3  # 出对子奖励，适当提高
+reward_triple_with_single = 5  # 出三带一奖励，适当提高
+reward_player_win = -10  # 玩家获胜奖励，惩罚加重
+reward_ai_win = 10  # AI 获胜奖励，奖励加重
+reward_pair_win_bonus = 5  # 对子获胜额外奖励，提高
+reward_split_pair_penalty = -5  # 拆对子惩罚，加重
+reward_split_triple_penalty = -5  # 拆三带一惩罚，加重
+reward_pass_avoid_split = 3  # pass避免拆牌的奖励
 
 # AI 相关奖励参数
-reward_ai_single_card = 5
-reward_ai_pair_card = 10
-reward_ai_triple_with_single = 15
-reward_ai_split_pair_penalty = -1
-reward_ai_split_triple_penalty = -2
-reward_ai_pass_avoid_split = 5
+reward_ai_single_card = 1
+reward_ai_pair_card = 3
+reward_ai_triple_with_single = 3
+reward_ai_split_pair_penalty = -5
+reward_ai_split_triple_penalty = -5
+reward_ai_pass_avoid_split = 3
 reward_ai_low_cards_bonus = 5
-reward_opponent_low_cards_penalty = 5
-reward_ai_single_penalty = 10  # 出的单子比可出的单子大，需要惩罚，避免过早出掉大牌
-reward_ai_pair_penalty = 10  # 出的单对子比可出的对子大，需要惩罚，避免过早出掉大牌
-reward_ai_triple_penalty = 10  # 出的三带一比可出的三带一大，需要惩罚，避免过早出掉大牌
+reward_opponent_low_cards_penalty = 3
+reward_ai_single_penalty = 5  # 出的单子比可出的单子大，需要惩罚，避免过早出掉大牌
+reward_ai_pair_penalty = 5  # 出的单对子比可出的对子大，需要惩罚，避免过早出掉大牌
+reward_ai_triple_penalty = 5  # 出的三带一比可出的三带一大，需要惩罚，避免过早出掉大牌
 
 # 新增参数
 reward_hand_size_penalty = 0.5  # 手牌数量惩罚系数
-reward_opponent_pressure_bonus = 20  # 压制对手时的额外奖励
+reward_opponent_pressure_bonus = 5  # 压制对手时的额外奖励
 reward_premature_play_penalty = 0.8  # 过早出牌惩罚系数
 
 # 预定义所有可能的动作列表
@@ -656,32 +656,11 @@ def train_dqn(env, num_episodes=num_episodes, initial_gamma=initial_gamma, gamma
                 else:
                     action = random.choice(valid_actions)
             else:
-                # 从状态中获取玩家可能的最大牌
-                player_max_card = state[0][-2] * 9
-
-                # 调整探索率
-                opponent_strength = player_max_card / 9
-                strategy_factor = 0.5 + 0.5 * (1 - opponent_strength)  # 对手越强，越保守
-                epsilon = max(epsilon_min, initial_epsilon * (epsilon_decay ** episode) * strategy_factor)
-
-                if random.random() < epsilon:
-                    valid_actions = env._get_valid_actions(env.ai_hand)
-                    if not valid_actions:
-                        action = 'pass'
-                    else:
-                        action = random.choice(valid_actions)
+                valid_actions = env._get_valid_actions(env.ai_hand)
+                if not valid_actions:
+                    action = 'pass'
                 else:
-                    with torch.no_grad():
-                        q_values = model(state)
-                    valid_actions = env._get_valid_actions(env.ai_hand)
-                    valid_action_indices = {action: ACTION_TO_INDEX[action] for action in valid_actions if
-                                            action in ACTION_TO_INDEX}
-                    if not valid_actions:
-                        action = 'pass'
-                    else:
-                        valid_q_values = [q_values[0][valid_action_indices[action]] for action in valid_actions if
-                                          action in valid_action_indices]
-                        action = valid_actions[torch.argmax(torch.tensor(valid_q_values)).item()]
+                    action = random.choice(valid_actions)
 
             next_state, reward, done = env.step(action)
             next_state = torch.tensor(next_state, dtype=torch.float32).unsqueeze(0)
@@ -744,69 +723,8 @@ def load_model(input_size, model_path):
 if __name__ == "__main__":
     # 训练模型
     env = CardGameEnv()
-    # trained_model = train_dqn(env)
+    trained_model = train_dqn(env)
     model_path = "models/model" + str(num_episodes) + ".pth"
-    # os.makedirs(os.path.dirname(model_path), exist_ok=True)
-    # save_model(trained_model, model_path)
+    os.makedirs(os.path.dirname(model_path), exist_ok=True)
+    save_model(trained_model, model_path)
     print("Model saved successfully.")
-
-    # 加载模型用于对战
-    input_size = len(env._get_state())
-    loaded_model = load_model(input_size, model_path)
-
-    while True:
-        print("\nNew game started!")
-        state = env.reset()
-        state = torch.tensor(state, dtype=torch.float32).unsqueeze(0)
-        done = False
-        current_player = 'player'
-
-        while not done:
-            if current_player == 'player':
-                print(f"\nYour hand: {env.player_hand}")
-                valid_actions = env._get_valid_actions(env.player_hand)
-                while True:
-                    action = input("Enter your action: ")
-                    if action in valid_actions:
-                        break
-                    else:
-                        print("Invalid action. Please try again.")
-            else:
-                # 从状态中获取玩家可能的最大牌
-                player_max_card = state[0][-2] * 9
-
-                # 调整探索率
-                opponent_strength = player_max_card / 9
-                strategy_factor = 0.5 + 0.5 * (1 - opponent_strength)  # 对手越强，越保守
-                epsilon = max(epsilon_min, initial_epsilon * (epsilon_decay ** num_episodes) * strategy_factor)
-
-                with torch.no_grad():
-                    q_values = loaded_model(state)
-                valid_actions = env._get_valid_actions(env.ai_hand)
-                valid_action_indices = {action: ACTION_TO_INDEX[action] for action in valid_actions if
-                                        action in ACTION_TO_INDEX}
-                if not valid_actions:
-                    action = 'pass'
-                else:
-                    valid_q_values = [q_values[0][valid_action_indices[action]] for action in valid_actions if
-                                      action in valid_action_indices]
-                    if random.random() < epsilon:
-                        action = random.choice(valid_actions)
-                    else:
-                        action = valid_actions[torch.argmax(torch.tensor(valid_q_values)).item()]
-
-            print(f"{'You' if current_player == 'player' else 'AI'} played: {action}")
-            next_state, reward, done = env.step(action)
-            state = torch.tensor(next_state, dtype=torch.float32).unsqueeze(0)
-
-            if done:
-                if len(env.player_hand) == 0:
-                    print("You win!")
-                else:
-                    print("AI wins!")
-            else:
-                current_player = 'ai' if current_player == 'player' else 'player'
-
-        play_again = input("Do you want to play another game? (y/n): ").strip().lower()
-        if play_again != 'y':
-            break

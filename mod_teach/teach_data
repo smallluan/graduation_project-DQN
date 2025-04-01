@@ -1,0 +1,6530 @@
+人为训练数据记录
+
+
+C:\Users\admin\AppData\Local\Programs\Python\Python311\python.exe D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py
+No existing model found. Starting training from scratch.
+
+=== New Game ===
+
+Your hand: [1, 2, 4, 4, 5, 5, 7, 7, 8, 9]
+
+Ai hand: [1, 2, 5, 6, 6, 6, 7, 7, 8, 8]
+
+our valid_actions:  ['1', '2', '4', '4', '5', '5', '7', '7', '8', '9', '44', '55', '77']
+
+Enter your action: 1
+ai valid_actions:  ['2', '5', '6', '6', '6', '7', '7', '8', '8', 'pass']
+AI played: 7
+Enter your rating (-10-10): -3
+Enter suggested action: 2
+
+Your hand: [2, 4, 4, 5, 5, 7, 7, 8, 9]
+
+Ai hand: [1, 2, 5, 6, 6, 6, 7, 8, 8]
+
+our valid_actions:  ['8', '9', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [2, 4, 4, 5, 5, 7, 7, 9]
+
+Ai hand: [1, 2, 5, 6, 6, 6, 7, 8, 8]
+
+our valid_actions:  ['2', '4', '4', '5', '5', '7', '7', '9', '44', '55', '77']
+
+Enter your action: 2
+ai valid_actions:  ['5', '6', '6', '6', '7', '8', '8', 'pass']
+AI played: 7
+Enter your rating (-10-10): -3
+Enter suggested action: 5
+
+Your hand: [4, 4, 5, 5, 7, 7, 9]
+
+Ai hand: [1, 2, 5, 6, 6, 6, 8, 8]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [4, 4, 5, 5, 7, 7]
+
+Ai hand: [1, 2, 5, 6, 6, 6, 8, 8]
+
+our valid_actions:  ['4', '4', '5', '5', '7', '7', '44', '55', '77']
+
+Enter your action: 44
+ai valid_actions:  ['66', '66', '88', 'pass']
+AI played: 88
+Enter your rating (-10-10): -3
+Enter suggested action: 66
+
+Your hand: [5, 5, 7, 7]
+
+Ai hand: [1, 2, 5, 6, 6, 6]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '5', '6', '6', '6', '66', '66', '6661', '6662', '6665']
+AI played: 1
+Enter your rating (-10-10): 5
+Enter suggested action: 1
+
+Your hand: [5, 5, 7, 7]
+
+Ai hand: [2, 5, 6, 6, 6]
+
+our valid_actions:  ['5', '5', '7', '7', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [5, 5, 7]
+
+Ai hand: [2, 5, 6, 6, 6]
+
+our valid_actions:  ['5', '5', '7', '55']
+
+Enter your action: 55
+ai valid_actions:  ['66', '66', 'pass']
+AI played: pass
+Enter your rating (-10-10): 1
+Enter suggested action: pass
+
+Your hand: [7]
+
+Ai hand: [2, 5, 6, 6, 6]
+
+our valid_actions:  ['7']
+
+Enter your action: 7
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [3, 4, 4, 4, 5, 6, 7, 8, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 4, 5, 6, 8, 9, 9]
+
+our valid_actions:  ['3', '4', '4', '4', '5', '6', '7', '8', '8', '9', '44', '44', '88', '4443', '4445', '4446', '4447', '4448', '4448', '4449']
+
+Enter your action: 4443
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [5, 6, 7, 8, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 4, 5, 6, 8, 9, 9]
+
+our valid_actions:  ['5', '6', '7', '8', '8', '9', '88']
+
+Enter your action: 5
+ai valid_actions:  ['6', '8', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: 6
+
+Your hand: [6, 7, 8, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 4, 5, 6, 8, 9, 9]
+
+our valid_actions:  ['6', '7', '8', '8', '9', '88']
+
+Enter your action: 6
+ai valid_actions:  ['8', '9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): -2
+Enter suggested action: 8
+
+Your hand: [7, 8, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 4, 5, 6, 8, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '3', '3', '4', '5', '6', '8', '9', '33']
+AI played: 4
+Enter your rating (-10-10): -3
+Enter suggested action: 1
+
+Your hand: [7, 8, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 5, 6, 8, 9]
+
+our valid_actions:  ['7', '8', '8', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['8', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 2
+Enter suggested action: 8
+
+Your hand: [8, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 5, 6, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '3', '3', '5', '6', '8', '33']
+AI played: 33
+Enter your rating (-10-10): 5
+Enter suggested action: 33
+
+Your hand: [8, 8, 9]
+
+Ai hand: [1, 2, 5, 6, 8]
+
+our valid_actions:  ['88', 'pass']
+
+Enter your action: 88
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [9]
+
+Ai hand: [1, 2, 5, 6, 8]
+
+our valid_actions:  ['9']
+
+Enter your action: 9
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [2, 3, 4, 4, 5, 6, 7, 7, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 4, 5, 6, 6, 7, 8]
+
+our valid_actions:  ['2', '3', '4', '4', '5', '6', '7', '7', '9', '9', '44', '77', '99']
+
+Enter your action: 2
+ai valid_actions:  ['4', '4', '5', '6', '6', '7', '8', 'pass']
+AI played: 7
+Enter your rating (-10-10): 3
+Enter suggested action: 5
+
+Your hand: [3, 4, 4, 5, 6, 7, 7, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 4, 5, 6, 6, 8]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '4', '4', '5', '6', '6', '8', '11', '44', '66']
+AI played: 4
+Enter your rating (-10-10): -3
+Enter suggested action: 11
+
+Your hand: [3, 4, 4, 5, 6, 7, 7, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 5, 6, 6, 8]
+
+our valid_actions:  ['5', '6', '7', '7', '9', '9', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['6', '6', '8', 'pass']
+AI played: pass
+Enter your rating (-10-10): 2
+Enter suggested action: pass
+
+Your hand: [3, 4, 4, 6, 7, 7, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 5, 6, 6, 8]
+
+our valid_actions:  ['3', '4', '4', '6', '7', '7', '9', '9', '44', '77', '99']
+
+Enter your action: 44
+ai valid_actions:  ['66', 'pass']
+AI played: pass
+Enter your rating (-10-10): -3
+Enter suggested action: 66
+
+Your hand: [3, 6, 7, 7, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 5, 6, 6, 8]
+
+our valid_actions:  ['3', '6', '7', '7', '9', '9', '77', '99']
+
+Enter your action: 3
+ai valid_actions:  ['4', '5', '6', '6', '8', 'pass']
+AI played: 4
+Enter your rating (-10-10): 5
+Enter suggested action: 4
+
+Your hand: [6, 7, 7, 9, 9]
+
+Ai hand: [1, 1, 2, 5, 6, 6, 8]
+
+our valid_actions:  ['6', '7', '7', '9', '9', 'pass']
+
+Enter your action: 6
+ai valid_actions:  ['8', 'pass']
+AI played: pass
+Enter your rating (-10-10): -3
+Enter suggested action: 8
+
+Your hand: [7, 7, 9, 9]
+
+Ai hand: [1, 1, 2, 5, 6, 6, 8]
+
+our valid_actions:  ['7', '7', '9', '9', '77', '99']
+
+Enter your action: 77
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [9, 9]
+
+Ai hand: [1, 1, 2, 5, 6, 6, 8]
+
+our valid_actions:  ['9', '9', '99']
+
+Enter your action: 99
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 2, 3, 4, 4, 6, 7, 8, 9]
+
+Ai hand: [2, 2, 4, 5, 5, 6, 6, 7, 9, 9]
+
+our valid_actions:  ['1', '1', '2', '3', '4', '4', '6', '7', '8', '9', '11', '44']
+
+Enter your action: 11
+ai valid_actions:  ['22', '55', '66', '99', 'pass']
+AI played: 66
+Enter your rating (-10-10): -5
+Enter suggested action: 22
+
+Your hand: [2, 3, 4, 4, 6, 7, 8, 9]
+
+Ai hand: [2, 2, 4, 5, 5, 7, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '2', '4', '5', '5', '7', '9', '9', '22', '55', '99']
+AI played: 4
+Enter your rating (-10-10): -2
+Enter suggested action: 22
+
+Your hand: [2, 3, 4, 4, 6, 7, 8, 9]
+
+Ai hand: [2, 2, 5, 5, 7, 9, 9]
+
+our valid_actions:  ['6', '7', '8', '9', 'pass']
+
+Enter your action: 6
+ai valid_actions:  ['7', '9', '9', 'pass']
+AI played: 7
+Enter your rating (-10-10): 5
+Enter suggested action: 7
+
+Your hand: [2, 3, 4, 4, 7, 8, 9]
+
+Ai hand: [2, 2, 5, 5, 9, 9]
+
+our valid_actions:  ['8', '9', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 7
+Enter suggested action: 9
+
+Your hand: [2, 3, 4, 4, 7, 9]
+
+Ai hand: [2, 2, 5, 5, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '2', '5', '5', '9', '22', '55']
+AI played: 22
+Enter your rating (-10-10): 7
+Enter suggested action: 22
+
+Your hand: [2, 3, 4, 4, 7, 9]
+
+Ai hand: [5, 5, 9]
+
+our valid_actions:  ['44', 'pass']
+
+Enter your action: 44
+ai valid_actions:  ['55', 'pass']
+AI played: 55
+Enter your rating (-10-10): 10
+Enter suggested action: 55
+
+Your hand: [2, 3, 7, 9]
+
+Ai hand: [9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['9']
+AI played: 9
+Enter your rating (-10-10): 10
+Enter suggested action: 9
+AI wins!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [2, 2, 5, 6, 6, 6, 7, 7, 8, 8]
+
+Ai hand: [1, 3, 3, 4, 4, 4, 7, 8, 9, 9]
+
+our valid_actions:  ['2', '2', '5', '6', '6', '6', '7', '7', '8', '8', '22', '66', '66', '77', '88', '6662', '6662', '6665', '6667', '6667', '6668', '6668']
+
+Enter your action: 6665
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [2, 2, 7, 7, 8, 8]
+
+Ai hand: [1, 3, 3, 4, 4, 4, 7, 8, 9, 9]
+
+our valid_actions:  ['2', '2', '7', '7', '8', '8', '22', '77', '88']
+
+Enter your action: 22
+ai valid_actions:  ['33', '44', '44', '99', 'pass']
+AI played: 33
+Enter your rating (-10-10): 7
+Enter suggested action: 33
+
+Your hand: [7, 7, 8, 8]
+
+Ai hand: [1, 4, 4, 4, 7, 8, 9, 9]
+
+our valid_actions:  ['77', '88', 'pass']
+
+Enter your action: 77
+ai valid_actions:  ['99', 'pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: 99
+
+Your hand: [8, 8]
+
+Ai hand: [1, 4, 4, 4, 7, 8, 9, 9]
+
+our valid_actions:  ['8', '8', '88']
+
+Enter your action: 88
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 2, 2, 3, 3, 4, 6, 7, 9]
+
+Ai hand: [1, 3, 5, 5, 6, 6, 6, 7, 9, 9]
+
+our valid_actions:  ['1', '2', '2', '2', '3', '3', '4', '6', '7', '9', '22', '22', '33', '2221', '2223', '2223', '2224', '2226', '2227', '2229']
+
+Enter your action: 2221
+ai valid_actions:  ['6661', '6663', '6665', '6665', '6667', '6669', '6669', 'pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: 6661
+
+Your hand: [3, 3, 4, 6, 7, 9]
+
+Ai hand: [1, 3, 5, 5, 6, 6, 6, 7, 9, 9]
+
+our valid_actions:  ['3', '3', '4', '6', '7', '9', '33']
+
+Enter your action: 33
+ai valid_actions:  ['55', '66', '66', '99', 'pass']
+AI played: 55
+Enter your rating (-10-10): 5
+Enter suggested action: 55
+
+Your hand: [4, 6, 7, 9]
+
+Ai hand: [1, 3, 6, 6, 6, 7, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '3', '6', '6', '6', '7', '9', '9', '66', '66', '99', '6661', '6663', '6667', '6669', '6669']
+AI played: 1
+Enter your rating (-10-10): 5
+Enter suggested action: 1
+
+Your hand: [4, 6, 7, 9]
+
+Ai hand: [3, 6, 6, 6, 7, 9, 9]
+
+our valid_actions:  ['4', '6', '7', '9', 'pass']
+
+Enter your action: 4
+ai valid_actions:  ['6', '6', '6', '7', '9', '9', 'pass']
+AI played: 7
+Enter your rating (-10-10): 5
+Enter suggested action: 7
+
+Your hand: [6, 7, 9]
+
+Ai hand: [3, 6, 6, 6, 9, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [6, 7]
+
+Ai hand: [3, 6, 6, 6, 9, 9]
+
+our valid_actions:  ['6', '7']
+
+Enter your action: 6
+ai valid_actions:  ['9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 8
+Enter suggested action: 9
+
+Your hand: [7]
+
+Ai hand: [3, 6, 6, 6, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['3', '6', '6', '6', '9', '66', '66', '6663', '6669']
+AI played: 9
+Enter your rating (-10-10): 10
+Enter suggested action: 9
+
+Your hand: [7]
+
+Ai hand: [3, 6, 6, 6]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['3', '6', '6', '6', '66', '66', '6663']
+AI played: 3
+Enter your rating (-10-10): -10
+Enter suggested action: 6663
+
+Your hand: [7]
+
+Ai hand: [6, 6, 6]
+
+our valid_actions:  ['7', 'pass']
+
+Enter your action: 7
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [2, 3, 4, 5, 6, 7, 8, 8, 8, 9]
+
+Ai hand: [1, 1, 2, 2, 4, 5, 6, 7, 9, 9]
+
+our valid_actions:  ['2', '3', '4', '5', '6', '7', '8', '8', '8', '9', '88', '88', '8882', '8883', '8884', '8885', '8886', '8887', '8889']
+
+Enter your action: 2
+ai valid_actions:  ['4', '5', '6', '7', '9', '9', 'pass']
+AI played: 4
+Enter your rating (-10-10): 5
+Enter suggested action: 4
+
+Your hand: [3, 4, 5, 6, 7, 8, 8, 8, 9]
+
+Ai hand: [1, 1, 2, 2, 5, 6, 7, 9, 9]
+
+our valid_actions:  ['5', '6', '7', '8', '8', '8', '9', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['6', '7', '9', '9', 'pass']
+AI played: 7
+Enter your rating (-10-10): 3
+Enter suggested action: 6
+
+Your hand: [3, 4, 6, 7, 8, 8, 8, 9]
+
+Ai hand: [1, 1, 2, 2, 5, 6, 9, 9]
+
+our valid_actions:  ['8', '8', '8', '9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '2', '5', '6', '9', '9', '11', '22', '99']
+AI played: 1
+Enter your rating (-10-10): -2
+Enter suggested action: 11
+
+Your hand: [3, 4, 6, 7, 8, 8, 8, 9]
+
+Ai hand: [1, 2, 2, 5, 6, 9, 9]
+
+our valid_actions:  ['3', '4', '6', '7', '8', '8', '8', '9', 'pass']
+
+Enter your action: 3
+ai valid_actions:  ['5', '6', '9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): -1
+Enter suggested action: 5
+
+Your hand: [4, 6, 7, 8, 8, 8, 9]
+
+Ai hand: [1, 2, 2, 5, 6, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '2', '5', '6', '9', '22']
+AI played: 9
+Enter your rating (-10-10): -7
+Enter suggested action: 1
+
+Your hand: [4, 6, 7, 8, 8, 8, 9]
+
+Ai hand: [1, 2, 2, 5, 6]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '2', '5', '6', '22']
+AI played: 22
+Enter your rating (-10-10): 3
+Enter suggested action: 22
+
+Your hand: [4, 6, 7, 8, 8, 8, 9]
+
+Ai hand: [1, 5, 6]
+
+our valid_actions:  ['88', '88', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '5', '6']
+AI played: 1
+Enter your rating (-10-10): 3
+Enter suggested action: 1
+
+Your hand: [4, 6, 7, 8, 8, 8, 9]
+
+Ai hand: [5, 6]
+
+our valid_actions:  ['4', '6', '7', '8', '8', '8', '9', 'pass']
+
+Enter your action: 4
+ai valid_actions:  ['5', '6', 'pass']
+AI played: 6
+Enter your rating (-10-10): 1
+Enter suggested action: 5
+
+Your hand: [6, 7, 8, 8, 8, 9]
+
+Ai hand: [5]
+
+our valid_actions:  ['7', '8', '8', '8', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [6, 8, 8, 8, 9]
+
+Ai hand: [5]
+
+our valid_actions:  ['6', '8', '8', '8', '9', '88', '88', '8886', '8889']
+
+Enter your action: 8886
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [9]
+
+Ai hand: [5]
+
+our valid_actions:  ['9']
+
+Enter your action: 9
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 2, 2, 3, 5, 6, 7, 8, 8]
+
+Ai hand: [1, 3, 3, 4, 4, 4, 5, 7, 7, 9]
+
+our valid_actions:  ['1', '2', '2', '2', '3', '5', '6', '7', '8', '8', '22', '22', '88', '2221', '2223', '2225', '2226', '2227', '2228', '2228']
+
+Enter your action: 2221
+ai valid_actions:  ['4441', '4443', '4443', '4445', '4447', '4447', '4449', 'pass']
+AI played: 4449
+Enter your rating (-10-10): -5
+Enter suggested action: 4441
+
+Your hand: [3, 5, 6, 7, 8, 8]
+
+Ai hand: [1, 3, 3, 5, 7, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '3', '3', '5', '7', '7', '33', '77']
+AI played: 7
+Enter your rating (-10-10): -5
+Enter suggested action: 1
+
+Your hand: [3, 5, 6, 7, 8, 8]
+
+Ai hand: [1, 3, 3, 5, 7]
+
+our valid_actions:  ['8', '8', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [3, 5, 6, 7, 8]
+
+Ai hand: [1, 3, 3, 5, 7]
+
+our valid_actions:  ['3', '5', '6', '7', '8']
+
+Enter your action: 3
+ai valid_actions:  ['5', '7', 'pass']
+AI played: 7
+Enter your rating (-10-10): -1
+Enter suggested action: 5
+
+Your hand: [5, 6, 7, 8]
+
+Ai hand: [1, 3, 3, 5]
+
+our valid_actions:  ['8', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [5, 6, 7]
+
+Ai hand: [1, 3, 3, 5]
+
+our valid_actions:  ['5', '6', '7']
+
+Enter your action: 5
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [6, 7]
+
+Ai hand: [1, 3, 3, 5]
+
+our valid_actions:  ['6', '7']
+
+Enter your action: 6
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [7]
+
+Ai hand: [1, 3, 3, 5]
+
+our valid_actions:  ['7']
+
+Enter your action: 7
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [2, 3, 4, 4, 5, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 1, 2, 2, 2, 5, 6, 7, 7, 8]
+
+our valid_actions:  ['2', '3', '4', '4', '5', '5', '6', '7', '8', '9', '44', '55']
+
+Enter your action: 2
+ai valid_actions:  ['5', '6', '7', '7', '8', 'pass']
+AI played: 7
+Enter your rating (-10-10): -3
+Enter suggested action: 5
+
+Your hand: [3, 4, 4, 5, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 1, 2, 2, 2, 5, 6, 7, 8]
+
+our valid_actions:  ['8', '9', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [3, 4, 4, 5, 5, 6, 7, 9]
+
+Ai hand: [1, 1, 2, 2, 2, 5, 6, 7, 8]
+
+our valid_actions:  ['3', '4', '4', '5', '5', '6', '7', '9', '44', '55']
+
+Enter your action: 3
+ai valid_actions:  ['5', '6', '7', '8', 'pass']
+AI played: 7
+Enter your rating (-10-10): -2
+Enter suggested action: 5
+
+Your hand: [4, 4, 5, 5, 6, 7, 9]
+
+Ai hand: [1, 1, 2, 2, 2, 5, 6, 8]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '2', '2', '5', '6', '8', '11', '22', '22', '2221', '2221', '2225', '2226', '2228']
+AI played: 2225
+Enter your rating (-10-10): 8
+Enter suggested action: 2225
+
+Your hand: [4, 4, 5, 5, 6, 7, 9]
+
+Ai hand: [1, 1, 6, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '6', '8', '11']
+AI played: 1
+Enter your rating (-10-10): -4
+Enter suggested action: 11
+
+Your hand: [4, 4, 5, 5, 6, 7, 9]
+
+Ai hand: [1, 6, 8]
+
+our valid_actions:  ['4', '4', '5', '5', '6', '7', '9', 'pass']
+
+Enter your action: 6
+ai valid_actions:  ['8', 'pass']
+AI played: pass
+Enter your rating (-10-10): 3
+Enter suggested action: 8
+
+Your hand: [4, 4, 5, 5, 7, 9]
+
+Ai hand: [1, 6, 8]
+
+our valid_actions:  ['4', '4', '5', '5', '7', '9', '44', '55']
+
+Enter your action: 44
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [5, 5, 7, 9]
+
+Ai hand: [1, 6, 8]
+
+our valid_actions:  ['5', '5', '7', '9', '55']
+
+Enter your action: 55
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [7, 9]
+
+Ai hand: [1, 6, 8]
+
+our valid_actions:  ['7', '9']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [7]
+
+Ai hand: [1, 6, 8]
+
+our valid_actions:  ['7']
+
+Enter your action: 7
+You win!
+D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py:389: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:257.)
+  states = torch.tensor(states, dtype=torch.float32)
+Model saved as models/model_teach.pth
+Continue training? (y/n): n
+
+Process finished with exit code 0
+
+C:\Users\admin\AppData\Local\Programs\Python\Python311\python.exe D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py
+Loading existing model...
+
+=== New Game ===
+
+Your hand: [2, 2, 3, 3, 4, 5, 6, 7, 9, 9]
+
+Ai hand: [1, 1, 2, 2, 3, 4, 5, 6, 6, 6]
+
+our valid_actions:  ['2', '2', '3', '3', '4', '5', '6', '7', '9', '9', '22', '33', '99']
+
+Enter your action: 22
+ai valid_actions:  ['66', '66', 'pass']
+AI played: 66
+Enter your rating (-10-10): 5
+Enter suggested action: 66
+
+Your hand: [3, 3, 4, 5, 6, 7, 9, 9]
+
+Ai hand: [1, 1, 2, 2, 3, 4, 5, 6]
+
+our valid_actions:  ['99', 'pass']
+
+Enter your action: 99
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [3, 3, 4, 5, 6, 7]
+
+Ai hand: [1, 1, 2, 2, 3, 4, 5, 6]
+
+our valid_actions:  ['3', '3', '4', '5', '6', '7', '33']
+
+Enter your action: 33
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [4, 5, 6, 7]
+
+Ai hand: [1, 1, 2, 2, 3, 4, 5, 6]
+
+our valid_actions:  ['4', '5', '6', '7']
+
+Enter your action: 4
+ai valid_actions:  ['5', '6', 'pass']
+AI played: 6
+Enter your rating (-10-10): 3
+Enter suggested action: 5
+
+Your hand: [5, 6, 7]
+
+Ai hand: [1, 1, 2, 2, 3, 4, 5]
+
+our valid_actions:  ['7', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [5, 6]
+
+Ai hand: [1, 1, 2, 2, 3, 4, 5]
+
+our valid_actions:  ['5', '6']
+
+Enter your action: 5
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pas
+Enter suggested action: pass
+
+Your hand: [6]
+
+Ai hand: [1, 1, 2, 2, 3, 4, 5]
+
+our valid_actions:  ['6']
+
+Enter your action: 6
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [2, 3, 4, 4, 5, 5, 5, 6, 7, 7]
+
+Ai hand: [1, 2, 2, 3, 3, 6, 8, 8, 8, 9]
+
+our valid_actions:  ['2', '3', '4', '4', '5', '5', '5', '6', '7', '7', '44', '55', '55', '77', '5552', '5553', '5554', '5554', '5556', '5557', '5557']
+
+Enter your action: 2
+ai valid_actions:  ['3', '3', '6', '8', '8', '8', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): -5
+Enter suggested action: 6
+
+Your hand: [3, 4, 4, 5, 5, 5, 6, 7, 7]
+
+Ai hand: [1, 2, 2, 3, 3, 6, 8, 8, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '2', '3', '3', '6', '8', '8', '8', '22', '33', '88', '88', '8881', '8882', '8882', '8883', '8883', '8886']
+AI played: 33
+Enter your rating (-10-10): 3
+Enter suggested action: 22
+
+Your hand: [3, 4, 4, 5, 5, 5, 6, 7, 7]
+
+Ai hand: [1, 2, 2, 6, 8, 8, 8]
+
+our valid_actions:  ['44', '55', '55', '77', 'pass']
+
+Enter your action: 44
+ai valid_actions:  ['88', '88', 'pass']
+AI played: 88
+Enter your rating (-10-10): -5
+Enter suggested action: pass
+
+Your hand: [3, 5, 5, 5, 6, 7, 7]
+
+Ai hand: [1, 2, 2, 6, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '2', '6', '8', '22']
+AI played: 22
+Enter your rating (-10-10): 7
+Enter suggested action: 22
+
+Your hand: [3, 5, 5, 5, 6, 7, 7]
+
+Ai hand: [1, 6, 8]
+
+our valid_actions:  ['55', '55', '77', 'pass']
+
+Enter your action: 77
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [3, 5, 5, 5, 6]
+
+Ai hand: [1, 6, 8]
+
+our valid_actions:  ['3', '5', '5', '5', '6', '55', '55', '5553', '5556']
+
+Enter your action: 5553
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [6]
+
+Ai hand: [1, 6, 8]
+
+our valid_actions:  ['6']
+
+Enter your action: 6
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 4, 4, 6, 7, 7, 7, 8, 8]
+
+Ai hand: [1, 1, 2, 2, 3, 3, 4, 5, 8, 9]
+
+our valid_actions:  ['1', '2', '4', '4', '6', '7', '7', '7', '8', '8', '44', '77', '77', '88', '7771', '7772', '7774', '7774', '7776', '7778', '7778']
+
+Enter your action: 1
+ai valid_actions:  ['2', '2', '3', '3', '4', '5', '8', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): -5
+Enter suggested action: 4
+
+Your hand: [2, 4, 4, 6, 7, 7, 7, 8, 8]
+
+Ai hand: [1, 1, 2, 2, 3, 3, 4, 5, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '2', '3', '3', '4', '5', '8', '11', '22', '33']
+AI played: 33
+Enter your rating (-10-10): -3
+Enter suggested action: 11
+
+Your hand: [2, 4, 4, 6, 7, 7, 7, 8, 8]
+
+Ai hand: [1, 1, 2, 2, 4, 5, 8]
+
+our valid_actions:  ['44', '77', '77', '88', 'pass']
+
+Enter your action: 44
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [2, 6, 7, 7, 7, 8, 8]
+
+Ai hand: [1, 1, 2, 2, 4, 5, 8]
+
+our valid_actions:  ['2', '6', '7', '7', '7', '8', '8', '77', '77', '88', '7772', '7776', '7778', '7778']
+
+Enter your action: 2
+ai valid_actions:  ['4', '5', '8', 'pass']
+AI played: 8
+Enter your rating (-10-10): -3
+Enter suggested action: 4
+
+Your hand: [6, 7, 7, 7, 8, 8]
+
+Ai hand: [1, 1, 2, 2, 4, 5]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '2', '4', '5', '11', '22']
+AI played: 22
+Enter your rating (-10-10): 2
+Enter suggested action: 11
+
+Your hand: [6, 7, 7, 7, 8, 8]
+
+Ai hand: [1, 1, 4, 5]
+
+our valid_actions:  ['77', '77', '88', 'pass']
+
+Enter your action: 88
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [6, 7, 7, 7]
+
+Ai hand: [1, 1, 4, 5]
+
+our valid_actions:  ['6', '7', '7', '7', '77', '77', '7776']
+
+Enter your action: 7776
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 2, 2, 3, 3, 4, 5, 6, 9]
+
+Ai hand: [1, 4, 4, 5, 5, 6, 7, 7, 8, 9]
+
+our valid_actions:  ['1', '2', '2', '2', '3', '3', '4', '5', '6', '9', '22', '22', '33', '2221', '2223', '2223', '2224', '2225', '2226', '2229']
+
+Enter your action: 2221
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [3, 3, 4, 5, 6, 9]
+
+Ai hand: [1, 4, 4, 5, 5, 6, 7, 7, 8, 9]
+
+our valid_actions:  ['3', '3', '4', '5', '6', '9', '33']
+
+Enter your action: 33
+ai valid_actions:  ['44', '55', '77', 'pass']
+AI played: 55
+Enter your rating (-10-10): 3
+Enter suggested action: 44
+
+Your hand: [4, 5, 6, 9]
+
+Ai hand: [1, 4, 4, 6, 7, 7, 8, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '4', '4', '6', '7', '7', '8', '9', '44', '77']
+AI played: 9
+Enter your rating (-10-10): -7
+Enter suggested action: 1
+
+Your hand: [4, 5, 6, 9]
+
+Ai hand: [1, 4, 4, 6, 7, 7, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '4', '4', '6', '7', '7', '8', '44', '77']
+AI played: 1
+Enter your rating (-10-10): 5
+Enter suggested action: 1
+
+Your hand: [4, 5, 6, 9]
+
+Ai hand: [4, 4, 6, 7, 7, 8]
+
+our valid_actions:  ['4', '5', '6', '9', 'pass']
+
+Enter your action: 4
+ai valid_actions:  ['6', '7', '7', '8', 'pass']
+AI played: 6
+Enter your rating (-10-10): 5
+Enter suggested action: 6
+
+Your hand: [5, 6, 9]
+
+Ai hand: [4, 4, 7, 7, 8]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [5, 6]
+
+Ai hand: [4, 4, 7, 7, 8]
+
+our valid_actions:  ['5', '6']
+
+Enter your action: 5
+ai valid_actions:  ['7', '7', '8', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 8
+
+Your hand: [6]
+
+Ai hand: [4, 4, 7, 7, 8]
+
+our valid_actions:  ['6']
+
+Enter your action: 6
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 3, 3, 4, 6, 6, 6, 7, 8, 9]
+
+Ai hand: [2, 2, 3, 3, 5, 5, 7, 8, 9, 9]
+
+our valid_actions:  ['1', '3', '3', '4', '6', '6', '6', '7', '8', '9', '33', '66', '66', '6661', '6663', '6663', '6664', '6667', '6668', '6669']
+
+Enter your action: 1
+ai valid_actions:  ['2', '2', '3', '3', '5', '5', '7', '8', '9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): -5
+Enter suggested action: 7
+
+Your hand: [3, 3, 4, 6, 6, 6, 7, 8, 9]
+
+Ai hand: [2, 2, 3, 3, 5, 5, 7, 8, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '2', '3', '3', '5', '5', '7', '8', '9', '22', '33', '55']
+AI played: 9
+Enter your rating (-10-10): -6
+Enter suggested action: 22
+
+Your hand: [3, 3, 4, 6, 6, 6, 7, 8, 9]
+
+Ai hand: [2, 2, 3, 3, 5, 5, 7, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '2', '3', '3', '5', '5', '7', '8', '22', '33', '55']
+AI played: 33
+Enter your rating (-10-10): 3
+Enter suggested action: 22
+
+Your hand: [3, 3, 4, 6, 6, 6, 7, 8, 9]
+
+Ai hand: [2, 2, 5, 5, 7, 8]
+
+our valid_actions:  ['66', '66', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '2', '5', '5', '7', '8', '22', '55']
+AI played: 22
+Enter your rating (-10-10): 5
+Enter suggested action: 22
+
+Your hand: [3, 3, 4, 6, 6, 6, 7, 8, 9]
+
+Ai hand: [5, 5, 7, 8]
+
+our valid_actions:  ['33', '66', '66', 'pass']
+
+Enter your action: 33
+ai valid_actions:  ['55', 'pass']
+AI played: 55
+Enter your rating (-10-10): 6
+Enter suggested action: 55
+
+Your hand: [4, 6, 6, 6, 7, 8, 9]
+
+Ai hand: [7, 8]
+
+our valid_actions:  ['66', '66', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['7', '8']
+AI played: 8
+Enter your rating (-10-10): -1
+Enter suggested action: 7
+
+Your hand: [4, 6, 6, 6, 7, 8, 9]
+
+Ai hand: [7]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [4, 6, 6, 6, 7, 8]
+
+Ai hand: [7]
+
+our valid_actions:  ['4', '6', '6', '6', '7', '8', '66', '66', '6664', '6667', '6668']
+
+Enter your action: 6664
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [7, 8]
+
+Ai hand: [7]
+
+our valid_actions:  ['7', '8']
+
+Enter your action: 7
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [8]
+
+Ai hand: [7]
+
+our valid_actions:  ['8']
+
+Enter your action: 8
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 3, 4, 4, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 1, 2, 3, 5, 6, 6, 8, 9, 9]
+
+our valid_actions:  ['1', '1', '3', '4', '4', '5', '6', '7', '8', '9', '11', '44']
+
+Enter your action: 11
+ai valid_actions:  ['66', '99', 'pass']
+AI played: 99
+Enter your rating (-10-10): -3
+Enter suggested action: 66
+
+Your hand: [3, 4, 4, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 1, 2, 3, 5, 6, 6, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '3', '5', '6', '6', '8', '11', '66']
+AI played: 1
+Enter your rating (-10-10): -1
+Enter suggested action: 2
+
+Your hand: [3, 4, 4, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 2, 3, 5, 6, 6, 8]
+
+our valid_actions:  ['3', '4', '4', '5', '6', '7', '8', '9', 'pass']
+
+Enter your action: 3
+ai valid_actions:  ['5', '6', '6', '8', 'pass']
+AI played: 6
+Enter your rating (-10-10): -3
+Enter suggested action: 5
+
+Your hand: [4, 4, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 2, 3, 5, 6, 8]
+
+our valid_actions:  ['7', '8', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['8', 'pass']
+AI played: 8
+Enter your rating (-10-10): 3
+Enter suggested action: pass
+
+Your hand: [4, 4, 5, 6, 8, 9]
+
+Ai hand: [1, 2, 3, 5, 6]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [4, 4, 5, 6, 8]
+
+Ai hand: [1, 2, 3, 5, 6]
+
+our valid_actions:  ['4', '4', '5', '6', '8', '44']
+
+Enter your action: 44
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [5, 6, 8]
+
+Ai hand: [1, 2, 3, 5, 6]
+
+our valid_actions:  ['5', '6', '8']
+
+Enter your action: 5
+ai valid_actions:  ['6', 'pass']
+AI played: 6
+Enter your rating (-10-10): 5
+Enter suggested action: 6
+
+Your hand: [6, 8]
+
+Ai hand: [1, 2, 3, 5]
+
+our valid_actions:  ['8', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [6]
+
+Ai hand: [1, 2, 3, 5]
+
+our valid_actions:  ['6']
+
+Enter your action: 6
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 3, 4, 4, 6, 7, 7, 8, 9, 9]
+
+Ai hand: [2, 2, 2, 2, 3, 5, 5, 6, 7, 8]
+
+our valid_actions:  ['1', '3', '4', '4', '6', '7', '7', '8', '9', '9', '44', '77', '99']
+
+Enter your action: 1
+ai valid_actions:  ['2', '2', '2', '2', '3', '5', '5', '6', '7', '8', 'pass']
+AI played: 6
+Enter your rating (-10-10): 2
+Enter suggested action: 3
+
+Your hand: [3, 4, 4, 6, 7, 7, 8, 9, 9]
+
+Ai hand: [2, 2, 2, 2, 3, 5, 5, 7, 8]
+
+our valid_actions:  ['7', '7', '8', '9', '9', 'pass']
+
+Enter your action: 3
+Invalid action. Try again.
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [3, 4, 4, 6, 7, 7, 9, 9]
+
+Ai hand: [2, 2, 2, 2, 3, 5, 5, 7, 8]
+
+our valid_actions:  ['3', '4', '4', '6', '7', '7', '9', '9', '44', '77', '99']
+
+Enter your action: 3
+ai valid_actions:  ['5', '5', '7', '8', 'pass']
+AI played: 8
+Enter your rating (-10-10): 3
+Enter suggested action: 7
+
+Your hand: [4, 4, 6, 7, 7, 9, 9]
+
+Ai hand: [2, 2, 2, 2, 3, 5, 5, 7]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [4, 4, 6, 7, 7, 9]
+
+Ai hand: [2, 2, 2, 2, 3, 5, 5, 7]
+
+our valid_actions:  ['4', '4', '6', '7', '7', '9', '44', '77']
+
+Enter your action: 44
+ai valid_actions:  ['55', 'pass']
+AI played: 55
+Enter your rating (-10-10): 7
+Enter suggested action: 55
+
+Your hand: [6, 7, 7, 9]
+
+Ai hand: [2, 2, 2, 2, 3, 7]
+
+our valid_actions:  ['77', 'pass']
+
+Enter your action: 77
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [6, 9]
+
+Ai hand: [2, 2, 2, 2, 3, 7]
+
+our valid_actions:  ['6', '9']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [6]
+
+Ai hand: [2, 2, 2, 2, 3, 7]
+
+our valid_actions:  ['6']
+
+Enter your action: 6
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 3, 5, 7, 7, 7, 8, 8, 9]
+
+Ai hand: [1, 1, 2, 4, 5, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['1', '1', '3', '5', '7', '7', '7', '8', '8', '9', '11', '77', '77', '88', '7771', '7771', '7773', '7775', '7778', '7778', '7779']
+
+Enter your action: 7773
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [1, 1, 5, 8, 8, 9]
+
+Ai hand: [1, 1, 2, 4, 5, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['1', '1', '5', '8', '8', '9', '11', '88']
+
+Enter your action: 11
+ai valid_actions:  ['88', 'pass']
+AI played: 88
+Enter your rating (-10-10): 3
+Enter suggested action: 88
+
+Your hand: [5, 8, 8, 9]
+
+Ai hand: [1, 1, 2, 4, 5, 6, 7, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '4', '5', '6', '7', '9', '11']
+AI played: 9
+Enter your rating (-10-10): -5
+Enter suggested action: 11
+
+Your hand: [5, 8, 8, 9]
+
+Ai hand: [1, 1, 2, 4, 5, 6, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '4', '5', '6', '7', '11']
+AI played: 11
+Enter your rating (-10-10): 3
+Enter suggested action: 11
+
+Your hand: [5, 8, 8, 9]
+
+Ai hand: [2, 4, 5, 6, 7]
+
+our valid_actions:  ['88', 'pass']
+
+Enter your action: 88
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [5, 9]
+
+Ai hand: [2, 4, 5, 6, 7]
+
+our valid_actions:  ['5', '9']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [5]
+
+Ai hand: [2, 4, 5, 6, 7]
+
+our valid_actions:  ['5']
+
+Enter your action: 5
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 2, 3, 3, 4, 5, 6, 9, 9]
+
+Ai hand: [1, 2, 2, 3, 4, 4, 5, 7, 8, 9]
+
+our valid_actions:  ['1', '1', '2', '3', '3', '4', '5', '6', '9', '9', '11', '33', '99']
+
+Enter your action: 11
+ai valid_actions:  ['22', '44', 'pass']
+AI played: 44
+Enter your rating (-10-10): 3
+Enter suggested action: 22
+
+Your hand: [2, 3, 3, 4, 5, 6, 9, 9]
+
+Ai hand: [1, 2, 2, 3, 5, 7, 8, 9]
+
+our valid_actions:  ['99', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '2', '3', '5', '7', '8', '9', '22']
+AI played: 7
+Enter your rating (-10-10): 3
+Enter suggested action: 1
+
+Your hand: [2, 3, 3, 4, 5, 6, 9, 9]
+
+Ai hand: [1, 2, 2, 3, 5, 8, 9]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [2, 3, 3, 4, 5, 6, 9]
+
+Ai hand: [1, 2, 2, 3, 5, 8, 9]
+
+our valid_actions:  ['2', '3', '3', '4', '5', '6', '9', '33']
+
+Enter your action: 2
+ai valid_actions:  ['3', '5', '8', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): -3
+Enter suggested action: 3
+
+Your hand: [3, 3, 4, 5, 6, 9]
+
+Ai hand: [1, 2, 2, 3, 5, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '2', '3', '5', '8', '22']
+AI played: 22
+Enter your rating (-10-10): 3
+Enter suggested action: 22
+
+Your hand: [3, 3, 4, 5, 6, 9]
+
+Ai hand: [1, 3, 5, 8]
+
+our valid_actions:  ['33', 'pass']
+
+Enter your action: 33
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [4, 5, 6, 9]
+
+Ai hand: [1, 3, 5, 8]
+
+our valid_actions:  ['4', '5', '6', '9']
+
+Enter your action: 4
+ai valid_actions:  ['5', '8', 'pass']
+AI played: 8
+Enter your rating (-10-10): -2
+Enter suggested action: 5
+
+Your hand: [5, 6, 9]
+
+Ai hand: [1, 3, 5]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [5, 6]
+
+Ai hand: [1, 3, 5]
+
+our valid_actions:  ['5', '6']
+
+Enter your action: 5
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [6]
+
+Ai hand: [1, 3, 5]
+
+our valid_actions:  ['6']
+
+Enter your action: 6
+You win!
+D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py:389: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:257.)
+  states = torch.tensor(states, dtype=torch.float32)
+Model saved as models/model_teach.pth
+Continue training? (y/n): n
+
+Process finished with exit code 0
+
+C:\Users\admin\AppData\Local\Programs\Python\Python311\python.exe D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py
+Loading existing model...
+
+=== New Game ===
+
+Your hand: [1, 1, 4, 4, 5, 5, 6, 6, 7, 7]
+
+Ai hand: [1, 1, 2, 2, 4, 5, 7, 8, 8, 9]
+
+our valid_actions:  ['1', '1', '4', '4', '5', '5', '6', '6', '7', '7', '11', '44', '55', '66', '77']
+
+Enter your action: 11
+ai valid_actions:  ['22', '88', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 22
+
+Your hand: [4, 4, 5, 5, 6, 6, 7, 7]
+
+Ai hand: [1, 1, 2, 2, 4, 5, 7, 8, 8, 9]
+
+our valid_actions:  ['4', '4', '5', '5', '6', '6', '7', '7', '44', '55', '66', '77']
+
+Enter your action: 44
+ai valid_actions:  ['88', 'pass']
+AI played: 88
+Enter your rating (-10-10): 6
+Enter suggested action: 88
+
+Your hand: [5, 5, 6, 6, 7, 7]
+
+Ai hand: [1, 1, 2, 2, 4, 5, 7, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '2', '4', '5', '7', '9', '11', '22']
+AI played: 22
+Enter your rating (-10-10): 3
+Enter suggested action: 11
+
+Your hand: [5, 5, 6, 6, 7, 7]
+
+Ai hand: [1, 1, 4, 5, 7, 9]
+
+our valid_actions:  ['55', '66', '77', 'pass']
+
+Enter your action: 55
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [6, 6, 7, 7]
+
+Ai hand: [1, 1, 4, 5, 7, 9]
+
+our valid_actions:  ['6', '6', '7', '7', '66', '77']
+
+Enter your action: 66
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [7, 7]
+
+Ai hand: [1, 1, 4, 5, 7, 9]
+
+our valid_actions:  ['7', '7', '77']
+
+Enter your action: 77
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 2, 3, 4, 5, 7, 7, 9, 9]
+
+Ai hand: [1, 2, 2, 3, 4, 4, 5, 7, 7, 8]
+
+our valid_actions:  ['1', '1', '2', '3', '4', '5', '7', '7', '9', '9', '11', '77', '99']
+
+Enter your action: 11
+ai valid_actions:  ['22', '44', '77', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 22
+
+Your hand: [2, 3, 4, 5, 7, 7, 9, 9]
+
+Ai hand: [1, 2, 2, 3, 4, 4, 5, 7, 7, 8]
+
+our valid_actions:  ['2', '3', '4', '5', '7', '7', '9', '9', '77', '99']
+
+Enter your action: 2
+ai valid_actions:  ['3', '4', '4', '5', '7', '7', '8', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 3
+
+Your hand: [3, 4, 5, 7, 7, 9, 9]
+
+Ai hand: [1, 2, 2, 3, 4, 4, 5, 7, 7, 8]
+
+our valid_actions:  ['3', '4', '5', '7', '7', '9', '9', '77', '99']
+
+Enter your action: 3
+ai valid_actions:  ['4', '4', '5', '7', '7', '8', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 5
+
+Your hand: [4, 5, 7, 7, 9, 9]
+
+Ai hand: [1, 2, 2, 3, 4, 4, 5, 7, 7, 8]
+
+our valid_actions:  ['4', '5', '7', '7', '9', '9', '77', '99']
+
+Enter your action: 4
+ai valid_actions:  ['5', '7', '7', '8', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 5
+
+Your hand: [5, 7, 7, 9, 9]
+
+Ai hand: [1, 2, 2, 3, 4, 4, 5, 7, 7, 8]
+
+our valid_actions:  ['5', '7', '7', '9', '9', '77', '99']
+
+Enter your action: 5
+ai valid_actions:  ['7', '7', '8', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 8
+
+Your hand: [7, 7, 9, 9]
+
+Ai hand: [1, 2, 2, 3, 4, 4, 5, 7, 7, 8]
+
+our valid_actions:  ['7', '7', '9', '9', '77', '99']
+
+Enter your action: 77
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: pass
+
+Your hand: [9, 9]
+
+Ai hand: [1, 2, 2, 3, 4, 4, 5, 7, 7, 8]
+
+our valid_actions:  ['9', '9', '99']
+
+Enter your action: 99
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 3, 3, 4, 5, 6, 7, 7, 7, 9]
+
+Ai hand: [1, 2, 3, 4, 5, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['1', '3', '3', '4', '5', '6', '7', '7', '7', '9', '33', '77', '77', '7771', '7773', '7773', '7774', '7775', '7776', '7779']
+
+Enter your action: 1
+ai valid_actions:  ['2', '3', '4', '5', '6', '7', '8', '8', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 2
+
+Your hand: [3, 3, 4, 5, 6, 7, 7, 7, 9]
+
+Ai hand: [1, 2, 3, 4, 5, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['3', '3', '4', '5', '6', '7', '7', '7', '9', '33', '77', '77', '7773', '7773', '7774', '7775', '7776', '7779']
+
+Enter your action: 7774
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: pass
+
+Your hand: [3, 3, 5, 6, 9]
+
+Ai hand: [1, 2, 3, 4, 5, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['3', '3', '5', '6', '9', '33']
+
+Enter your action: 33
+ai valid_actions:  ['88', 'pass']
+AI played: 88
+Enter your rating (-10-10): 6
+Enter suggested action: 88
+
+Your hand: [5, 6, 9]
+
+Ai hand: [1, 2, 3, 4, 5, 6, 7, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '3', '4', '5', '6', '7', '9']
+AI played: 6
+Enter your rating (-10-10): 1
+Enter suggested action: 1
+
+Your hand: [5, 6, 9]
+
+Ai hand: [1, 2, 3, 4, 5, 7, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [5, 6]
+
+Ai hand: [1, 2, 3, 4, 5, 7, 9]
+
+our valid_actions:  ['5', '6']
+
+Enter your action: 5
+ai valid_actions:  ['7', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 7
+
+Your hand: [6]
+
+Ai hand: [1, 2, 3, 4, 5, 7, 9]
+
+our valid_actions:  ['6']
+
+Enter your action: 6
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [3, 3, 4, 4, 4, 5, 6, 7, 7, 8]
+
+Ai hand: [1, 2, 2, 5, 6, 6, 6, 7, 8, 9]
+
+our valid_actions:  ['3', '3', '4', '4', '4', '5', '6', '7', '7', '8', '33', '44', '44', '77', '4443', '4443', '4445', '4446', '4447', '4447', '4448']
+
+Enter your action: 4445
+ai valid_actions:  ['6661', '6662', '6662', '6665', '6667', '6668', '6669', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 6661
+
+Your hand: [3, 3, 6, 7, 7, 8]
+
+Ai hand: [1, 2, 2, 5, 6, 6, 6, 7, 8, 9]
+
+our valid_actions:  ['3', '3', '6', '7', '7', '8', '33', '77']
+
+Enter your action: 33
+ai valid_actions:  ['66', '66', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 66
+
+Your hand: [6, 7, 7, 8]
+
+Ai hand: [1, 2, 2, 5, 6, 6, 6, 7, 8, 9]
+
+our valid_actions:  ['6', '7', '7', '8', '77']
+
+Enter your action: 77
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: pass
+
+Your hand: [6, 8]
+
+Ai hand: [1, 2, 2, 5, 6, 6, 6, 7, 8, 9]
+
+our valid_actions:  ['6', '8']
+
+Enter your action: 6
+ai valid_actions:  ['7', '8', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 9
+
+Your hand: [8]
+
+Ai hand: [1, 2, 2, 5, 6, 6, 6, 7, 8, 9]
+
+our valid_actions:  ['8']
+
+Enter your action: 8
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 2, 3, 3, 3, 5, 5, 7, 9]
+
+Ai hand: [2, 6, 6, 6, 7, 8, 8, 8, 9, 9]
+
+our valid_actions:  ['1', '2', '2', '3', '3', '3', '5', '5', '7', '9', '22', '33', '33', '55', '3331', '3332', '3332', '3335', '3335', '3337', '3339']
+
+Enter your action: 3331
+ai valid_actions:  ['6662', '6667', '6668', '6668', '6668', '6669', '6669', '8882', '8886', '8886', '8886', '8887', '8889', '8889', 'pass']
+AI played: 8886
+Enter your rating (-10-10): 4
+Enter suggested action: 6662
+
+Your hand: [2, 2, 5, 5, 7, 9]
+
+Ai hand: [2, 6, 6, 7, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '6', '6', '7', '9', '9', '66', '99']
+AI played: 9
+Enter your rating (-10-10): 1
+Enter suggested action: 2
+
+Your hand: [2, 2, 5, 5, 7, 9]
+
+Ai hand: [2, 6, 6, 7, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '6', '6', '7', '9', '66']
+AI played: 6
+Enter your rating (-10-10): 2
+Enter suggested action: 2
+
+Your hand: [2, 2, 5, 5, 7, 9]
+
+Ai hand: [2, 6, 7, 9]
+
+our valid_actions:  ['7', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -4
+Enter suggested action: 9
+
+Your hand: [2, 2, 5, 5, 9]
+
+Ai hand: [2, 6, 7, 9]
+
+our valid_actions:  ['2', '2', '5', '5', '9', '22', '55']
+
+Enter your action: 22
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5, 5, 9]
+
+Ai hand: [2, 6, 7, 9]
+
+our valid_actions:  ['5', '5', '9', '55']
+
+Enter your action: 55
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [9]
+
+Ai hand: [2, 6, 7, 9]
+
+our valid_actions:  ['9']
+
+Enter your action: 9
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 2, 3, 3, 5, 6, 8, 9, 9]
+
+Ai hand: [1, 2, 2, 4, 6, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['1', '2', '2', '3', '3', '5', '6', '8', '9', '9', '22', '33', '99']
+
+Enter your action: 1
+ai valid_actions:  ['2', '2', '4', '6', '7', '8', '8', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: 4
+
+Your hand: [2, 2, 3, 3, 5, 6, 8, 9, 9]
+
+Ai hand: [1, 2, 2, 4, 6, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['2', '2', '3', '3', '5', '6', '8', '9', '9', '22', '33', '99']
+
+Enter your action: 22
+ai valid_actions:  ['88', '99', 'pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 3, 5, 6, 8, 9, 9]
+
+Ai hand: [1, 2, 2, 4, 6, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['3', '3', '5', '6', '8', '9', '9', '33', '99']
+
+Enter your action: 33
+ai valid_actions:  ['88', '99', 'pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: 88
+
+Your hand: [5, 6, 8, 9, 9]
+
+Ai hand: [1, 2, 2, 4, 6, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['5', '6', '8', '9', '9', '99']
+
+Enter your action: 5
+ai valid_actions:  ['6', '7', '8', '8', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: 6
+
+Your hand: [6, 8, 9, 9]
+
+Ai hand: [1, 2, 2, 4, 6, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['6', '8', '9', '9', '99']
+
+Enter your action: 6
+ai valid_actions:  ['7', '8', '8', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: 7
+
+Your hand: [8, 9, 9]
+
+Ai hand: [1, 2, 2, 4, 6, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['8', '9', '9', '99']
+
+Enter your action: 99
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [8]
+
+Ai hand: [1, 2, 2, 4, 6, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['8']
+
+Enter your action: 8
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [2, 3, 4, 4, 5, 6, 6, 7, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 6, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['2', '3', '4', '4', '5', '6', '6', '7', '8', '9', '44', '66']
+
+Enter your action: 2
+ai valid_actions:  ['3', '3', '6', '6', '7', '8', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: 7
+
+Your hand: [3, 4, 4, 5, 6, 6, 7, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 6, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['3', '4', '4', '5', '6', '6', '7', '8', '9', '44', '66']
+
+Enter your action: 3
+ai valid_actions:  ['6', '6', '7', '8', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -6
+Enter suggested action: 7
+
+Your hand: [4, 4, 5, 6, 6, 7, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 6, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['4', '4', '5', '6', '6', '7', '8', '9', '44', '66']
+
+Enter your action: 44
+ai valid_actions:  ['66', '99', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 66
+
+Your hand: [5, 6, 6, 7, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 6, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['5', '6', '6', '7', '8', '9', '66']
+
+Enter your action: 5
+ai valid_actions:  ['6', '6', '7', '8', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 7
+
+Your hand: [6, 6, 7, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 6, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['6', '6', '7', '8', '9', '66']
+
+Enter your action: 66
+ai valid_actions:  ['99', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 99
+
+Your hand: [7, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 6, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['7', '8', '9']
+
+Enter your action: 7
+ai valid_actions:  ['8', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 8
+
+Your hand: [8, 9]
+
+Ai hand: [1, 2, 3, 3, 6, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['8', '9']
+
+Enter your action: 8
+ai valid_actions:  ['9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 9
+
+Your hand: [9]
+
+Ai hand: [1, 2, 3, 3, 6, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['9']
+
+Enter your action: 9
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 2, 3, 3, 4, 5, 6, 7, 9]
+
+Ai hand: [2, 3, 3, 4, 6, 6, 7, 7, 9, 9]
+
+our valid_actions:  ['1', '2', '2', '3', '3', '4', '5', '6', '7', '9', '22', '33']
+
+Enter your action: 22
+ai valid_actions:  ['33', '66', '77', '99', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 33
+
+Your hand: [1, 3, 3, 4, 5, 6, 7, 9]
+
+Ai hand: [2, 3, 3, 4, 6, 6, 7, 7, 9, 9]
+
+our valid_actions:  ['1', '3', '3', '4', '5', '6', '7', '9', '33']
+
+Enter your action: 33
+ai valid_actions:  ['66', '77', '99', 'pass']
+AI played: 77
+Enter your rating (-10-10): 6
+Enter suggested action: 77
+
+Your hand: [1, 4, 5, 6, 7, 9]
+
+Ai hand: [2, 3, 3, 4, 6, 6, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pas
+Invalid action. Try again.
+
+Enter your action: pass
+ai valid_actions:  ['2', '3', '3', '4', '6', '6', '9', '9', '33', '66', '99']
+AI played: 33
+Enter your rating (-10-10): 7
+Enter suggested action: 33
+
+Your hand: [1, 4, 5, 6, 7, 9]
+
+Ai hand: [2, 4, 6, 6, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '4', '6', '6', '9', '9', '66', '99']
+AI played: 6
+Enter your rating (-10-10): 3
+Enter suggested action: 2
+
+Your hand: [1, 4, 5, 6, 7, 9]
+
+Ai hand: [2, 4, 6, 9, 9]
+
+our valid_actions:  ['7', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -3
+Enter suggested action: 9
+
+Your hand: [1, 4, 5, 6, 9]
+
+Ai hand: [2, 4, 6, 9, 9]
+
+our valid_actions:  ['1', '4', '5', '6', '9']
+
+Enter your action: 1
+ai valid_actions:  ['2', '4', '6', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -7
+Enter suggested action: 2
+
+Your hand: [4, 5, 6, 9]
+
+Ai hand: [2, 4, 6, 9, 9]
+
+our valid_actions:  ['4', '5', '6', '9']
+
+Enter your action: 4
+ai valid_actions:  ['6', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -8
+Enter suggested action: 6
+
+Your hand: [5, 6, 9]
+
+Ai hand: [2, 4, 6, 9, 9]
+
+our valid_actions:  ['5', '6', '9']
+
+Enter your action: 5
+ai valid_actions:  ['6', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -9
+Enter suggested action: 6
+
+Your hand: [6, 9]
+
+Ai hand: [2, 4, 6, 9, 9]
+
+our valid_actions:  ['6', '9']
+
+Enter your action: 6
+ai valid_actions:  ['9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 9
+
+Your hand: [9]
+
+Ai hand: [2, 4, 6, 9, 9]
+
+our valid_actions:  ['9']
+
+Enter your action: 9
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 3, 3, 4, 7, 7, 8, 8, 9]
+
+Ai hand: [3, 4, 4, 5, 6, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['1', '2', '3', '3', '4', '7', '7', '8', '8', '9', '33', '77', '88']
+
+Enter your action: 1
+ai valid_actions:  ['3', '4', '4', '5', '6', '6', '7', '8', '8', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 2
+
+Your hand: [2, 3, 3, 4, 7, 7, 8, 8, 9]
+
+Ai hand: [3, 4, 4, 5, 6, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['2', '3', '3', '4', '7', '7', '8', '8', '9', '33', '77', '88']
+
+Enter your action: 2
+ai valid_actions:  ['3', '4', '4', '5', '6', '6', '7', '8', '8', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 3
+
+Your hand: [3, 3, 4, 7, 7, 8, 8, 9]
+
+Ai hand: [3, 4, 4, 5, 6, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['3', '3', '4', '7', '7', '8', '8', '9', '33', '77', '88']
+
+Enter your action: 33
+ai valid_actions:  ['44', '66', '88', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 44
+
+Your hand: [4, 7, 7, 8, 8, 9]
+
+Ai hand: [3, 4, 4, 5, 6, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['4', '7', '7', '8', '8', '9', '77', '88']
+
+Enter your action: 4
+ai valid_actions:  ['5', '6', '6', '7', '8', '8', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 5
+
+Your hand: [7, 7, 8, 8, 9]
+
+Ai hand: [3, 4, 4, 5, 6, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['7', '7', '8', '8', '9', '77', '88']
+
+Enter your action: 77
+ai valid_actions:  ['88', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 88
+
+Your hand: [8, 8, 9]
+
+Ai hand: [3, 4, 4, 5, 6, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['8', '8', '9', '88']
+
+Enter your action: 88
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: pass
+
+Your hand: [9]
+
+Ai hand: [3, 4, 4, 5, 6, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['9']
+
+Enter your action: 9
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 3, 3, 5, 6, 7, 8, 8, 8]
+
+Ai hand: [2, 2, 2, 2, 3, 4, 5, 5, 7, 7]
+
+our valid_actions:  ['1', '1', '3', '3', '5', '6', '7', '8', '8', '8', '11', '33', '88', '88', '8881', '8881', '8883', '8883', '8885', '8886', '8887']
+
+Enter your action: 11
+ai valid_actions:  ['22', '22', '22', '55', '77', 'pass']
+AI played: 22
+Enter your rating (-10-10): 10
+Enter suggested action: 22
+
+Your hand: [3, 3, 5, 6, 7, 8, 8, 8]
+
+Ai hand: [2, 2, 3, 4, 5, 5, 7, 7]
+
+our valid_actions:  ['33', '88', '88', 'pass']
+
+Enter your action: 33
+ai valid_actions:  ['55', '77', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 55
+
+Your hand: [5, 6, 7, 8, 8, 8]
+
+Ai hand: [2, 2, 3, 4, 5, 5, 7, 7]
+
+our valid_actions:  ['5', '6', '7', '8', '8', '8', '88', '88', '8885', '8886', '8887']
+
+Enter your action: 5
+ai valid_actions:  ['7', '7', 'pass']
+AI played: pass
+Enter your rating (-10-10): -7
+Enter suggested action: 7
+
+Your hand: [6, 7, 8, 8, 8]
+
+Ai hand: [2, 2, 3, 4, 5, 5, 7, 7]
+
+our valid_actions:  ['6', '7', '8', '8', '8', '88', '88', '8886', '8887']
+
+Enter your action: 88
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [6, 7, 8]
+
+Ai hand: [2, 2, 3, 4, 5, 5, 7, 7]
+
+our valid_actions:  ['6', '7', '8']
+
+Enter your action: 6
+ai valid_actions:  ['7', '7', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 7
+
+Your hand: [7, 8]
+
+Ai hand: [2, 2, 3, 4, 5, 5, 7, 7]
+
+our valid_actions:  ['7', '8']
+
+Enter your action: 7
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [8]
+
+Ai hand: [2, 2, 3, 4, 5, 5, 7, 7]
+
+our valid_actions:  ['8']
+
+Enter your action: 8
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [2, 3, 4, 5, 5, 7, 7, 7, 8, 9]
+
+Ai hand: [1, 1, 1, 2, 2, 3, 6, 8, 9, 9]
+
+our valid_actions:  ['2', '3', '4', '5', '5', '7', '7', '7', '8', '9', '55', '77', '77', '7772', '7773', '7774', '7775', '7775', '7778', '7779']
+
+Enter your action: 2
+ai valid_actions:  ['3', '6', '8', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 3
+
+Your hand: [3, 4, 5, 5, 7, 7, 7, 8, 9]
+
+Ai hand: [1, 1, 1, 2, 2, 3, 6, 8, 9, 9]
+
+our valid_actions:  ['3', '4', '5', '5', '7', '7', '7', '8', '9', '55', '77', '77', '7773', '7774', '7775', '7775', '7778', '7779']
+
+Enter your action: 3
+ai valid_actions:  ['6', '8', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 6
+
+Your hand: [4, 5, 5, 7, 7, 7, 8, 9]
+
+Ai hand: [1, 1, 1, 2, 2, 3, 6, 8, 9, 9]
+
+our valid_actions:  ['4', '5', '5', '7', '7', '7', '8', '9', '55', '77', '77', '7774', '7775', '7775', '7778', '7779']
+
+Enter your action: 4
+ai valid_actions:  ['6', '8', '9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 6
+
+Your hand: [5, 5, 7, 7, 7, 8, 9]
+
+Ai hand: [1, 1, 1, 2, 2, 3, 6, 8, 9, 9]
+
+our valid_actions:  ['5', '5', '7', '7', '7', '8', '9', '55', '77', '77', '7775', '7775', '7778', '7779']
+
+Enter your action: 55
+ai valid_actions:  ['99', 'pass']
+AI played: pass
+Enter your rating (-10-10): -10
+Enter suggested action: 99
+
+Your hand: [7, 7, 7, 8, 9]
+
+Ai hand: [1, 1, 1, 2, 2, 3, 6, 8, 9, 9]
+
+our valid_actions:  ['7', '7', '7', '8', '9', '77', '77', '7778', '7779']
+
+Enter your action: 7778
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: pass
+
+Your hand: [9]
+
+Ai hand: [1, 1, 1, 2, 2, 3, 6, 8, 9, 9]
+
+our valid_actions:  ['9']
+
+Enter your action: 9
+You win!
+D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py:389: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:257.)
+  states = torch.tensor(states, dtype=torch.float32)
+Model saved as models/model_teach.pth
+Continue training? (y/n): n
+
+Process finished with exit code 0
+
+C:\Users\admin\AppData\Local\Programs\Python\Python311\python.exe D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py
+Loading existing model...
+
+=== New Game ===
+
+Your hand: [2, 2, 3, 4, 4, 5, 5, 7, 8, 9]
+
+Ai hand: [1, 1, 2, 2, 4, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['2', '2', '3', '4', '4', '5', '5', '7', '8', '9', '22', '44', '55']
+
+Enter your action: 22
+ai valid_actions:  ['88', 'pass']
+AI played: 88
+Enter your rating (-10-10): 4
+Enter suggested action: 88
+
+Your hand: [3, 4, 4, 5, 5, 7, 8, 9]
+
+Ai hand: [1, 1, 2, 2, 4, 6, 7, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: 3
+Invalid action. Try again.
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '2', '4', '6', '7', '9', '11', '22']
+AI played: 7
+Enter your rating (-10-10): 2
+Enter suggested action: 4
+
+Your hand: [3, 4, 4, 5, 5, 7, 8, 9]
+
+Ai hand: [1, 1, 2, 2, 4, 6, 9]
+
+our valid_actions:  ['8', '9', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 7
+Enter suggested action: 9
+
+Your hand: [3, 4, 4, 5, 5, 7, 9]
+
+Ai hand: [1, 1, 2, 2, 4, 6]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '2', '4', '6', '11', '22']
+AI played: 22
+Enter your rating (-10-10): 6
+Enter suggested action: 11
+
+Your hand: [3, 4, 4, 5, 5, 7, 9]
+
+Ai hand: [1, 1, 4, 6]
+
+our valid_actions:  ['44', '55', 'pass']
+
+Enter your action: 44
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 5, 5, 7, 9]
+
+Ai hand: [1, 1, 4, 6]
+
+our valid_actions:  ['3', '5', '5', '7', '9', '55']
+
+Enter your action: 3
+ai valid_actions:  ['4', '6', 'pass']
+AI played: 6
+Enter your rating (-10-10): 5
+Enter suggested action: 4
+
+Your hand: [5, 5, 7, 9]
+
+Ai hand: [1, 1, 4]
+
+our valid_actions:  ['7', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5, 5, 9]
+
+Ai hand: [1, 1, 4]
+
+our valid_actions:  ['5', '5', '9', '55']
+
+Enter your action: 55
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [9]
+
+Ai hand: [1, 1, 4]
+
+our valid_actions:  ['9']
+
+Enter your action: 9
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 3, 4, 5, 5, 6, 6, 7, 9]
+
+Ai hand: [1, 3, 3, 4, 5, 6, 6, 7, 8, 9]
+
+our valid_actions:  ['1', '2', '3', '4', '5', '5', '6', '6', '7', '9', '55', '66']
+
+Enter your action: 1
+ai valid_actions:  ['3', '3', '4', '5', '6', '6', '7', '8', '9', 'pass']
+AI played: 6
+Enter your rating (-10-10): 4
+Enter suggested action: 4
+
+Your hand: [2, 3, 4, 5, 5, 6, 6, 7, 9]
+
+Ai hand: [1, 3, 3, 4, 5, 6, 7, 8, 9]
+
+our valid_actions:  ['7', '9', 'pass']
+
+Enter your action: 2
+Invalid action. Try again.
+
+Enter your action: 7
+ai valid_actions:  ['8', '9', 'pass']
+AI played: 8
+Enter your rating (-10-10): 8
+Enter suggested action: 8
+
+Your hand: [2, 3, 4, 5, 5, 6, 6, 9]
+
+Ai hand: [1, 3, 3, 4, 5, 6, 7, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 3, 4, 5, 5, 6, 6]
+
+Ai hand: [1, 3, 3, 4, 5, 6, 7, 9]
+
+our valid_actions:  ['2', '3', '4', '5', '5', '6', '6', '55', '66']
+
+Enter your action: 2
+ai valid_actions:  ['3', '3', '4', '5', '6', '7', '9', 'pass']
+AI played: 6
+Enter your rating (-10-10): 5
+Enter suggested action: 4
+
+Your hand: [3, 4, 5, 5, 6, 6]
+
+Ai hand: [1, 3, 3, 4, 5, 7, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '3', '3', '4', '5', '7', '9', '33']
+AI played: 33
+Enter your rating (-10-10): 8
+Enter suggested action: 33
+
+Your hand: [3, 4, 5, 5, 6, 6]
+
+Ai hand: [1, 4, 5, 7, 9]
+
+our valid_actions:  ['55', '66', 'pass']
+
+Enter your action: 55
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 4, 6, 6]
+
+Ai hand: [1, 4, 5, 7, 9]
+
+our valid_actions:  ['3', '4', '6', '6', '66']
+
+Enter your action: 3
+ai valid_actions:  ['4', '5', '7', '9', 'pass']
+AI played: 7
+Enter your rating (-10-10): 4
+Enter suggested action: 4
+
+Your hand: [4, 6, 6]
+
+Ai hand: [1, 4, 5, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '4', '5', '9']
+AI played: 1
+Enter your rating (-10-10): 8
+Enter suggested action: 1
+
+Your hand: [4, 6, 6]
+
+Ai hand: [4, 5, 9]
+
+our valid_actions:  ['4', '6', '6', 'pass']
+
+Enter your action: 4
+ai valid_actions:  ['5', '9', 'pass']
+AI played: 5
+Enter your rating (-10-10): 7
+Enter suggested action: 5
+
+Your hand: [6, 6]
+
+Ai hand: [4, 9]
+
+our valid_actions:  ['6', '6', 'pass']
+
+Enter your action: 6
+ai valid_actions:  ['9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 10
+Enter suggested action: 9
+
+Your hand: [6]
+
+Ai hand: [4]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['4']
+AI played: 4
+Enter your rating (-10-10): 10
+Enter suggested action: 4
+AI wins!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 1, 2, 2, 2, 4, 6, 6, 7]
+
+Ai hand: [3, 3, 3, 4, 4, 5, 6, 8, 8, 9]
+
+our valid_actions:  ['1', '1', '1', '2', '2', '2', '4', '6', '6', '7', '11', '11', '22', '22', '66', '1112', '1112', '1112', '1114', '1116', '1116', '1117', '2221', '2221', '2221', '2224', '2226', '2226', '2227']
+
+Enter your action: 1114
+ai valid_actions:  ['3334', '3334', '3335', '3336', '3338', '3338', '3339', 'pass']
+AI played: 3339
+Enter your rating (-10-10): 7
+Enter suggested action: 3334
+
+Your hand: [2, 2, 2, 6, 6, 7]
+
+Ai hand: [4, 4, 5, 6, 8, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['4', '4', '5', '6', '8', '8', '44', '88']
+AI played: 6
+Enter your rating (-10-10): 5
+Enter suggested action: 5
+
+Your hand: [2, 2, 2, 6, 6, 7]
+
+Ai hand: [4, 4, 5, 8, 8]
+
+our valid_actions:  ['7', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['8', '8', 'pass']
+AI played: 8
+Enter your rating (-10-10): 8
+Enter suggested action: 8
+
+Your hand: [2, 2, 2, 6, 6]
+
+Ai hand: [4, 4, 5, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['4', '4', '5', '8', '44']
+AI played: 44
+Enter your rating (-10-10): 7
+Enter suggested action: 44
+
+Your hand: [2, 2, 2, 6, 6]
+
+Ai hand: [5, 8]
+
+our valid_actions:  ['66', 'pass']
+
+Enter your action: 66
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 0
+Enter suggested action: pass
+
+Your hand: [2, 2, 2]
+
+Ai hand: [5, 8]
+
+our valid_actions:  ['2', '2', '2', '22', '22']
+
+Enter your action: 22
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: 0
+Enter suggested action: pass
+
+Your hand: [2]
+
+Ai hand: [5, 8]
+
+our valid_actions:  ['2']
+
+Enter your action: 2
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 2, 4, 4, 4, 6, 7, 9, 9]
+
+Ai hand: [1, 2, 4, 5, 6, 7, 7, 7, 8, 9]
+
+our valid_actions:  ['1', '2', '2', '4', '4', '4', '6', '7', '9', '9', '22', '44', '44', '99', '4441', '4442', '4442', '4446', '4447', '4449', '4449']
+
+Enter your action: 4441
+ai valid_actions:  ['7771', '7772', '7774', '7775', '7776', '7778', '7779', 'pass']
+AI played: 7776
+Enter your rating (-10-10): 6
+Enter suggested action: 7771
+
+Your hand: [2, 2, 6, 7, 9, 9]
+
+Ai hand: [1, 2, 4, 5, 8, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '4', '5', '8', '9']
+AI played: 8
+Enter your rating (-10-10): 2
+Enter suggested action: 1
+
+Your hand: [2, 2, 6, 7, 9, 9]
+
+Ai hand: [1, 2, 4, 5, 9]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 2, 6, 7, 9]
+
+Ai hand: [1, 2, 4, 5, 9]
+
+our valid_actions:  ['2', '2', '6', '7', '9', '22']
+
+Enter your action: 22
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [6, 7, 9]
+
+Ai hand: [1, 2, 4, 5, 9]
+
+our valid_actions:  ['6', '7', '9']
+
+Enter your action: 6
+ai valid_actions:  ['9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 8
+Enter suggested action: 9
+
+Your hand: [7, 9]
+
+Ai hand: [1, 2, 4, 5]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '4', '5']
+AI played: 1
+Enter your rating (-10-10): 5
+Enter suggested action: 1
+
+Your hand: [7, 9]
+
+Ai hand: [2, 4, 5]
+
+our valid_actions:  ['7', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [7]
+
+Ai hand: [2, 4, 5]
+
+our valid_actions:  ['7']
+
+Enter your action: 7
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [2, 2, 3, 3, 3, 4, 5, 8, 8, 9]
+
+Ai hand: [1, 1, 4, 6, 7, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['2', '2', '3', '3', '3', '4', '5', '8', '8', '9', '22', '33', '33', '88', '3332', '3332', '3334', '3335', '3338', '3338', '3339']
+
+Enter your action: 3334
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 2, 5, 8, 8, 9]
+
+Ai hand: [1, 1, 4, 6, 7, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['2', '2', '5', '8', '8', '9', '22', '88']
+
+Enter your action: 22
+ai valid_actions:  ['77', '88', '99', 'pass']
+AI played: 88
+Enter your rating (-10-10): 3
+Enter suggested action: 77
+
+Your hand: [5, 8, 8, 9]
+
+Ai hand: [1, 1, 4, 6, 7, 7, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '4', '6', '7', '7', '9', '9', '11', '77', '99']
+AI played: 6
+Enter your rating (-10-10): 3
+Enter suggested action: 11
+
+Your hand: [5, 8, 8, 9]
+
+Ai hand: [1, 1, 4, 7, 7, 9, 9]
+
+our valid_actions:  ['8', '8', '9', 'pass']
+
+Enter your action:
+Invalid action. Try again.
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5, 8, 8]
+
+Ai hand: [1, 1, 4, 7, 7, 9, 9]
+
+our valid_actions:  ['5', '8', '8', '88']
+
+Enter your action: 88
+ai valid_actions:  ['99', 'pass']
+AI played: 99
+Enter your rating (-10-10): 9
+Enter suggested action: 99
+
+Your hand: [5]
+
+Ai hand: [1, 1, 4, 7, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '4', '7', '7', '11', '77']
+AI played: 1
+Enter your rating (-10-10): -10
+Enter suggested action: 11
+
+Your hand: [5]
+
+Ai hand: [1, 4, 7, 7]
+
+our valid_actions:  ['5', 'pass']
+
+Enter your action: 5
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [2, 3, 4, 5, 6, 7, 8, 8, 9, 9]
+
+Ai hand: [1, 3, 3, 3, 4, 4, 5, 5, 6, 7]
+
+our valid_actions:  ['2', '3', '4', '5', '6', '7', '8', '8', '9', '9', '88', '99']
+
+Enter your action: 2
+ai valid_actions:  ['3', '3', '3', '4', '4', '5', '5', '6', '7', 'pass']
+AI played: 3
+Enter your rating (-10-10): 3
+Enter suggested action: 6
+
+Your hand: [3, 4, 5, 6, 7, 8, 8, 9, 9]
+
+Ai hand: [1, 3, 3, 4, 4, 5, 5, 6, 7]
+
+our valid_actions:  ['4', '5', '6', '7', '8', '8', '9', '9', 'pass']
+
+Enter your action: 4
+ai valid_actions:  ['5', '5', '6', '7', 'pass']
+AI played: 6
+Enter your rating (-10-10): 6
+Enter suggested action: 6
+
+Your hand: [3, 5, 6, 7, 8, 8, 9, 9]
+
+Ai hand: [1, 3, 3, 4, 4, 5, 5, 7]
+
+our valid_actions:  ['7', '8', '8', '9', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 5, 6, 8, 8, 9, 9]
+
+Ai hand: [1, 3, 3, 4, 4, 5, 5, 7]
+
+our valid_actions:  ['3', '5', '6', '8', '8', '9', '9', '88', '99']
+
+Enter your action: 3
+ai valid_actions:  ['4', '4', '5', '5', '7', 'pass']
+AI played: 7
+Enter your rating (-10-10): 6
+Enter suggested action: 7
+
+Your hand: [5, 6, 8, 8, 9, 9]
+
+Ai hand: [1, 3, 3, 4, 4, 5, 5]
+
+our valid_actions:  ['8', '8', '9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5, 6, 8, 8, 9]
+
+Ai hand: [1, 3, 3, 4, 4, 5, 5]
+
+our valid_actions:  ['5', '6', '8', '8', '9', '88']
+
+Enter your action: 5
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [6, 8, 8, 9]
+
+Ai hand: [1, 3, 3, 4, 4, 5, 5]
+
+our valid_actions:  ['6', '8', '8', '9', '88']
+
+Enter your action: 6
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [8, 8, 9]
+
+Ai hand: [1, 3, 3, 4, 4, 5, 5]
+
+our valid_actions:  ['8', '8', '9', '88']
+
+Enter your action: 88
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [9]
+
+Ai hand: [1, 3, 3, 4, 4, 5, 5]
+
+our valid_actions:  ['9']
+
+Enter your action: 9
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 2, 4, 4, 6, 6, 6, 6, 7]
+
+Ai hand: [1, 1, 1, 2, 2, 3, 3, 5, 5, 8]
+
+our valid_actions:  ['1', '2', '2', '4', '4', '6', '6', '6', '6', '7', '22', '44', '66', '66', '66', '6661', '6662', '6662', '6664', '6664', '6667', '6661', '6662', '6662', '6664', '6664', '6667']
+
+Enter your action: 6661
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 2, 4, 4, 6, 7]
+
+Ai hand: [1, 1, 1, 2, 2, 3, 3, 5, 5, 8]
+
+our valid_actions:  ['2', '2', '4', '4', '6', '7', '22', '44']
+
+Enter your action: 22
+ai valid_actions:  ['33', '55', 'pass']
+AI played: 33
+Enter your rating (-10-10): 7
+Enter suggested action: 33
+
+Your hand: [4, 4, 6, 7]
+
+Ai hand: [1, 1, 1, 2, 2, 5, 5, 8]
+
+our valid_actions:  ['44', 'pass']
+
+Enter your action: 44
+ai valid_actions:  ['55', 'pass']
+AI played: 55
+Enter your rating (-10-10): 7
+Enter suggested action: 55
+
+Your hand: [6, 7]
+
+Ai hand: [1, 1, 1, 2, 2, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '1', '2', '2', '8', '11', '11', '22', '1112', '1112', '1118']
+AI played: 22
+Enter your rating (-10-10): 3
+Enter suggested action: 1118
+
+Your hand: [6, 7]
+
+Ai hand: [1, 1, 1, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '1', '8', '11', '11', '1118']
+AI played: 8
+Enter your rating (-10-10): 0
+Enter suggested action: 1118
+
+Your hand: [6, 7]
+
+Ai hand: [1, 1, 1]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '1', '11', '11']
+AI played: 1
+Enter your rating (-10-10): -10
+Enter suggested action: 6
+
+Your hand: [6, 7]
+
+Ai hand: [1, 1]
+
+our valid_actions:  ['6', '7', 'pass']
+
+Enter your action: 6
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [7]
+
+Ai hand: [1, 1]
+
+our valid_actions:  ['7']
+
+Enter your action: 7
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 3, 4, 5, 5, 7, 7, 9, 9]
+
+Ai hand: [1, 2, 2, 3, 4, 4, 5, 5, 7, 8]
+
+our valid_actions:  ['1', '1', '3', '4', '5', '5', '7', '7', '9', '9', '11', '55', '77', '99']
+
+Enter your action: 11
+ai valid_actions:  ['22', '44', '55', 'pass']
+AI played: 22
+Enter your rating (-10-10): 7
+Enter suggested action: 22
+
+Your hand: [3, 4, 5, 5, 7, 7, 9, 9]
+
+Ai hand: [1, 3, 4, 4, 5, 5, 7, 8]
+
+our valid_actions:  ['55', '77', '99', 'pass']
+
+Enter your action: 55
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 4, 7, 7, 9, 9]
+
+Ai hand: [1, 3, 4, 4, 5, 5, 7, 8]
+
+our valid_actions:  ['3', '4', '7', '7', '9', '9', '77', '99']
+
+Enter your action: 3
+ai valid_actions:  ['4', '4', '5', '5', '7', '8', 'pass']
+AI played: 7
+Enter your rating (-10-10): 5
+Enter suggested action: 7
+
+Your hand: [4, 7, 7, 9, 9]
+
+Ai hand: [1, 3, 4, 4, 5, 5, 8]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 7, 7, 9]
+
+Ai hand: [1, 3, 4, 4, 5, 5, 8]
+
+our valid_actions:  ['4', '7', '7', '9', '77']
+
+Enter your action: 4
+ai valid_actions:  ['5', '5', '8', 'pass']
+AI played: 8
+Enter your rating (-10-10): 7
+Enter suggested action: 8
+
+Your hand: [7, 7, 9]
+
+Ai hand: [1, 3, 4, 4, 5, 5]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: pass
+
+Your hand: [7, 7]
+
+Ai hand: [1, 3, 4, 4, 5, 5]
+
+our valid_actions:  ['7', '7', '77']
+
+Enter your action: 77
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 3, 4, 4, 5, 6, 8, 9, 9]
+
+Ai hand: [1, 2, 4, 5, 5, 5, 8, 8, 9, 9]
+
+our valid_actions:  ['1', '2', '3', '4', '4', '5', '6', '8', '9', '9', '44', '99']
+
+Enter your action: 1
+ai valid_actions:  ['2', '4', '5', '5', '5', '8', '8', '9', '9', 'pass']
+AI played: 8
+Enter your rating (-10-10): 1
+Enter suggested action: 2
+
+Your hand: [2, 3, 4, 4, 5, 6, 8, 9, 9]
+
+Ai hand: [1, 2, 4, 5, 5, 5, 8, 9, 9]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 3, 4, 4, 5, 6, 8, 9]
+
+Ai hand: [1, 2, 4, 5, 5, 5, 8, 9, 9]
+
+our valid_actions:  ['2', '3', '4', '4', '5', '6', '8', '9', '44']
+
+Enter your action: 2
+ai valid_actions:  ['4', '5', '5', '5', '8', '9', '9', 'pass']
+AI played: 8
+Enter your rating (-10-10): 1
+Enter suggested action: 4
+
+Your hand: [3, 4, 4, 5, 6, 8, 9]
+
+Ai hand: [1, 2, 4, 5, 5, 5, 9, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 4, 4, 5, 6, 8]
+
+Ai hand: [1, 2, 4, 5, 5, 5, 9, 9]
+
+our valid_actions:  ['3', '4', '4', '5', '6', '8', '44']
+
+Enter your action: 3
+ai valid_actions:  ['4', '5', '5', '5', '9', '9', 'pass']
+AI played: 4
+Enter your rating (-10-10): 7
+Enter suggested action: 4
+
+Your hand: [4, 4, 5, 6, 8]
+
+Ai hand: [1, 2, 5, 5, 5, 9, 9]
+
+our valid_actions:  ['5', '6', '8', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 7
+Enter suggested action: 9
+
+Your hand: [4, 4, 6, 8]
+
+Ai hand: [1, 2, 5, 5, 5, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '5', '5', '5', '9', '55', '55', '5551', '5552', '5559']
+AI played: 55
+Enter your rating (-10-10): -3
+Enter suggested action: 5551
+
+Your hand: [4, 4, 6, 8]
+
+Ai hand: [1, 2, 5, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '5', '9']
+AI played: 1
+Enter your rating (-10-10): 3
+Enter suggested action: 1
+
+Your hand: [4, 4, 6, 8]
+
+Ai hand: [2, 5, 9]
+
+our valid_actions:  ['4', '4', '6', '8', 'pass']
+
+Enter your action: 6
+ai valid_actions:  ['9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 6
+Enter suggested action: 9
+
+Your hand: [4, 4, 8]
+
+Ai hand: [2, 5]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '5']
+AI played: 5
+Enter your rating (-10-10): -8
+Enter suggested action: 2
+
+Your hand: [4, 4, 8]
+
+Ai hand: [2]
+
+our valid_actions:  ['8', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 4]
+
+Ai hand: [2]
+
+our valid_actions:  ['4', '4', '44']
+
+Enter your action: 44
+You win!
+D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py:389: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:257.)
+  states = torch.tensor(states, dtype=torch.float32)
+Model saved as models/model_teach.pth
+Continue training? (y/n): n
+
+Process finished with exit code 0
+
+C:\Users\admin\AppData\Local\Programs\Python\Python311\python.exe D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py
+Loading existing model...
+
+=== New Game ===
+
+Your hand: [1, 1, 2, 2, 3, 3, 4, 4, 8, 9]
+
+Ai hand: [1, 3, 5, 5, 7, 8, 8, 9, 9, 9]
+
+our valid_actions:  ['1', '1', '2', '2', '3', '3', '4', '4', '8', '9', '11', '22', '33', '44']
+
+Enter your action: 11
+ai valid_actions:  ['55', '88', '99', '99', 'pass']
+AI played: 55
+Enter your rating (-10-10): 7
+Enter suggested action: 55
+
+Your hand: [2, 2, 3, 3, 4, 4, 8, 9]
+
+Ai hand: [1, 3, 7, 8, 8, 9, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '3', '7', '8', '8', '9', '9', '9', '88', '99', '99', '9991', '9993', '9997', '9998', '9998']
+AI played: 8
+Enter your rating (-10-10): 1
+Enter suggested action: 1
+
+Your hand: [2, 2, 3, 3, 4, 4, 8, 9]
+
+Ai hand: [1, 3, 7, 8, 9, 9, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '3', '7', '8', '9', '9', '9', '99', '99', '9991', '9993', '9997', '9998']
+AI played: 8
+Enter your rating (-10-10): 1
+Enter suggested action: 1
+
+Your hand: [2, 2, 3, 3, 4, 4, 8, 9]
+
+Ai hand: [1, 3, 7, 9, 9, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '3', '7', '9', '9', '9', '99', '99', '9991', '9993', '9997']
+AI played: 7
+Enter your rating (-10-10): 2
+Enter suggested action: 1
+
+Your hand: [2, 2, 3, 3, 4, 4, 8, 9]
+
+Ai hand: [1, 3, 9, 9, 9]
+
+our valid_actions:  ['8', '9', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['9', '9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): pass
+Enter your rating (-10-10): 6
+Enter suggested action: 9
+
+Your hand: [2, 2, 3, 3, 4, 4, 9]
+
+Ai hand: [1, 3, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '3', '9', '9', '99']
+AI played: 99
+Enter your rating (-10-10): -5
+Enter suggested action: 1
+
+Your hand: [2, 2, 3, 3, 4, 4, 9]
+
+Ai hand: [1, 3]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '3']
+AI played: 1
+Enter your rating (-10-10): 6
+Enter suggested action: 1
+
+Your hand: [2, 2, 3, 3, 4, 4, 9]
+
+Ai hand: [3]
+
+our valid_actions:  ['2', '2', '3', '3', '4', '4', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 2, 3, 3, 4, 4]
+
+Ai hand: [3]
+
+our valid_actions:  ['2', '2', '3', '3', '4', '4', '22', '33', '44']
+
+Enter your action: 22
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 3, 4, 4]
+
+Ai hand: [3]
+
+our valid_actions:  ['3', '3', '4', '4', '33', '44']
+
+Enter your action: 33
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 4]
+
+Ai hand: [3]
+
+our valid_actions:  ['4', '4', '44']
+
+Enter your action: 44
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 2, 2, 4, 5, 5, 6, 7, 9]
+
+Ai hand: [1, 1, 2, 3, 3, 6, 6, 7, 8, 8]
+
+our valid_actions:  ['1', '2', '2', '2', '4', '5', '5', '6', '7', '9', '22', '22', '55', '2221', '2224', '2225', '2225', '2226', '2227', '2229']
+
+Enter your action: 2221
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 5, 5, 6, 7, 9]
+
+Ai hand: [1, 1, 2, 3, 3, 6, 6, 7, 8, 8]
+
+our valid_actions:  ['4', '5', '5', '6', '7', '9', '55']
+
+Enter your action: 4
+ai valid_actions:  ['6', '6', '7', '8', '8', 'pass']
+AI played: 8
+Enter your rating (-10-10): 2
+Enter suggested action: 7
+
+Your hand: [5, 5, 6, 7, 9]
+
+Ai hand: [1, 1, 2, 3, 3, 6, 6, 7, 8]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5, 5, 6, 7]
+
+Ai hand: [1, 1, 2, 3, 3, 6, 6, 7, 8]
+
+our valid_actions:  ['5', '5', '6', '7', '55']
+
+Enter your action: 55
+ai valid_actions:  ['66', 'pass']
+AI played: 66
+Enter your rating (-10-10): 7
+Enter suggested action: 66
+
+Your hand: [6, 7]
+
+Ai hand: [1, 1, 2, 3, 3, 7, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '3', '3', '7', '8', '11', '33']
+AI played: 33
+Enter your rating (-10-10): 3
+Enter suggested action: 11
+
+Your hand: [6, 7]
+
+Ai hand: [1, 1, 2, 7, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '7', '8', '11']
+AI played: 8
+Enter your rating (-10-10): 1
+Enter suggested action: 2
+
+Your hand: [6, 7]
+
+Ai hand: [1, 1, 2, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '7', '11']
+AI played: 7
+Enter your rating (-10-10): 2
+Enter suggested action: 2
+
+Your hand: [6, 7]
+
+Ai hand: [1, 1, 2]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '11']
+AI played: 11
+Enter your rating (-10-10): 10
+Enter suggested action: 11
+
+Your hand: [6, 7]
+
+Ai hand: [2]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2']
+AI played: 2
+Enter your rating (-10-10): 2
+Enter suggested action: 2
+AI wins!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 3, 3, 4, 4, 5, 7, 7, 9]
+
+Ai hand: [1, 1, 3, 3, 6, 6, 6, 7, 8, 8]
+
+our valid_actions:  ['1', '2', '3', '3', '4', '4', '5', '7', '7', '9', '33', '44', '77']
+
+Enter your action: 1
+ai valid_actions:  ['3', '3', '6', '6', '6', '7', '8', '8', 'pass']
+AI played: 6
+Enter your rating (-10-10): 1
+Enter suggested action: 7
+
+Your hand: [2, 3, 3, 4, 4, 5, 7, 7, 9]
+
+Ai hand: [1, 1, 3, 3, 6, 6, 7, 8, 8]
+
+our valid_actions:  ['7', '7', '9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '3', '3', '6', '6', '7', '8', '8', '11', '33', '66', '88']
+AI played: 33
+Enter your rating (-10-10): 4
+Enter suggested action: 11
+
+Your hand: [2, 3, 3, 4, 4, 5, 7, 7, 9]
+
+Ai hand: [1, 1, 6, 6, 7, 8, 8]
+
+our valid_actions:  ['44', '77', 'pass']
+
+Enter your action: 44
+ai valid_actions:  ['66', '88', 'pass']
+AI played: 88
+Enter your rating (-10-10): 2
+Enter suggested action: 66
+
+Your hand: [2, 3, 3, 5, 7, 7, 9]
+
+Ai hand: [1, 1, 6, 6, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '6', '6', '7', '11', '66']
+AI played: 6
+Enter your rating (-10-10): -3
+Enter suggested action: 11
+
+Your hand: [2, 3, 3, 5, 7, 7, 9]
+
+Ai hand: [1, 1, 6, 7]
+
+our valid_actions:  ['7', '7', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 3, 3, 5, 7, 7]
+
+Ai hand: [1, 1, 6, 7]
+
+our valid_actions:  ['2', '3', '3', '5', '7', '7', '33', '77']
+
+Enter your action: 33
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 5, 7, 7]
+
+Ai hand: [1, 1, 6, 7]
+
+our valid_actions:  ['2', '5', '7', '7', '77']
+
+Enter your action: 2
+ai valid_actions:  ['6', '7', 'pass']
+AI played: 6
+Enter your rating (-10-10): 5
+Enter suggested action: 6
+
+Your hand: [5, 7, 7]
+
+Ai hand: [1, 1, 7]
+
+our valid_actions:  ['7', '7', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '7', '11']
+AI played: 7
+Enter your rating (-10-10): 5
+Enter suggested action: 11
+
+Your hand: [5, 7, 7]
+
+Ai hand: [1, 1]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '11']
+AI played: 1
+Enter your rating (-10-10): -10
+Enter suggested action: 11
+
+Your hand: [5, 7, 7]
+
+Ai hand: [1]
+
+our valid_actions:  ['5', '7', '7', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [7, 7]
+
+Ai hand: [1]
+
+our valid_actions:  ['7', '7', '77']
+
+Enter your action: 77
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 4, 4, 6, 6, 6, 7, 8, 8]
+
+Ai hand: [3, 3, 3, 5, 6, 7, 7, 8, 9, 9]
+
+our valid_actions:  ['1', '2', '4', '4', '6', '6', '6', '7', '8', '8', '44', '66', '66', '88', '6661', '6662', '6664', '6664', '6667', '6668', '6668']
+
+Enter your action: 6661
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 4, 4, 7, 8, 8]
+
+Ai hand: [3, 3, 3, 5, 6, 7, 7, 8, 9, 9]
+
+our valid_actions:  ['2', '4', '4', '7', '8', '8', '44', '88']
+
+Enter your action: 2
+ai valid_actions:  ['3', '3', '3', '5', '6', '7', '7', '8', '9', '9', 'pass']
+AI played: 6
+Enter your rating (-10-10): 7
+Enter suggested action: 6
+
+Your hand: [4, 4, 7, 8, 8]
+
+Ai hand: [3, 3, 3, 5, 7, 7, 8, 9, 9]
+
+our valid_actions:  ['7', '8', '8', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['8', '9', '9', 'pass']
+AI played: 8
+Enter your rating (-10-10): 6
+Enter suggested action: 8
+
+Your hand: [4, 4, 8, 8]
+
+Ai hand: [3, 3, 3, 5, 7, 7, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['3', '3', '3', '5', '7', '7', '9', '9', '33', '33', '77', '99', '3335', '3337', '3337', '3339', '3339']
+AI played: 33
+Enter your rating (-10-10): -5
+Enter suggested action: 3335
+
+Your hand: [4, 4, 8, 8]
+
+Ai hand: [3, 5, 7, 7, 9, 9]
+
+our valid_actions:  ['44', '88', 'pass']
+
+Enter your action: 44
+ai valid_actions:  ['77', '99', 'pass']
+AI played: 99
+Enter your rating (-10-10): 1
+Enter suggested action: 77
+
+Your hand: [8, 8]
+
+Ai hand: [3, 5, 7, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['3', '5', '7', '7', '77']
+AI played: 7
+Enter your rating (-10-10): 0
+Enter suggested action: 3
+
+Your hand: [8, 8]
+
+Ai hand: [3, 5, 7]
+
+our valid_actions:  ['8', '8', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [8]
+
+Ai hand: [3, 5, 7]
+
+our valid_actions:  ['8']
+
+Enter your action: 8
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 2, 4, 5, 6, 6, 6, 8, 8]
+
+Ai hand: [1, 1, 2, 3, 3, 4, 7, 7, 8, 9]
+
+our valid_actions:  ['1', '1', '2', '4', '5', '6', '6', '6', '8', '8', '11', '66', '66', '88', '6661', '6661', '6662', '6664', '6665', '6668', '6668']
+
+Enter your action: 6662
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [1, 1, 4, 5, 8, 8]
+
+Ai hand: [1, 1, 2, 3, 3, 4, 7, 7, 8, 9]
+
+our valid_actions:  ['1', '1', '4', '5', '8', '8', '11', '88']
+
+Enter your action: 11
+ai valid_actions:  ['33', '77', 'pass']
+AI played: 33
+Enter your rating (-10-10): 6
+Enter suggested action: 33
+
+Your hand: [4, 5, 8, 8]
+
+Ai hand: [1, 1, 2, 4, 7, 7, 8, 9]
+
+our valid_actions:  ['88', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '4', '7', '7', '8', '9', '11', '77']
+AI played: 8
+Enter your rating (-10-10): -4
+Enter suggested action: 2
+
+Your hand: [4, 5, 8, 8]
+
+Ai hand: [1, 1, 2, 4, 7, 7, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '4', '7', '7', '9', '11', '77']
+AI played: 4
+Enter your rating (-10-10): 3
+Enter suggested action: 2
+
+Your hand: [4, 5, 8, 8]
+
+Ai hand: [1, 1, 2, 7, 7, 9]
+
+our valid_actions:  ['5', '8', '8', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['7', '7', '9', 'pass']
+AI played: 7
+Enter your rating (-10-10): 5
+Enter suggested action: 7
+
+Your hand: [4, 8, 8]
+
+Ai hand: [1, 1, 2, 7, 9]
+
+our valid_actions:  ['8', '8', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 6
+Enter suggested action: 9
+
+Your hand: [4, 8]
+
+Ai hand: [1, 1, 2, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '2', '7', '11']
+AI played: 7
+Enter your rating (-10-10): -5
+Enter suggested action: 2
+
+Your hand: [4, 8]
+
+Ai hand: [1, 1, 2]
+
+our valid_actions:  ['8', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4]
+
+Ai hand: [1, 1, 2]
+
+our valid_actions:  ['4']
+
+Enter your action: 4
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 4, 6, 6, 7, 7, 8, 9, 9]
+
+Ai hand: [2, 3, 3, 5, 5, 5, 6, 7, 8, 9]
+
+our valid_actions:  ['1', '2', '4', '6', '6', '7', '7', '8', '9', '9', '66', '77', '99']
+
+Enter your action: 1
+ai valid_actions:  ['2', '3', '3', '5', '5', '5', '6', '7', '8', '9', 'pass']
+AI played: 6
+Enter your rating (-10-10): 4
+Enter suggested action: 2
+
+Your hand: [2, 4, 6, 6, 7, 7, 8, 9, 9]
+
+Ai hand: [2, 3, 3, 5, 5, 5, 7, 8, 9]
+
+our valid_actions:  ['7', '7', '8', '9', '9', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 7
+Enter suggested action: 9
+
+Your hand: [2, 4, 6, 6, 7, 7, 9, 9]
+
+Ai hand: [2, 3, 3, 5, 5, 5, 7, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '3', '3', '5', '5', '5', '7', '8', '33', '55', '55', '5552', '5553', '5553', '5557', '5558']
+AI played: 33
+Enter your rating (-10-10): 6
+Enter suggested action: 5552
+
+Your hand: [2, 4, 6, 6, 7, 7, 9, 9]
+
+Ai hand: [2, 5, 5, 5, 7, 8]
+
+our valid_actions:  ['66', '77', '99', 'pass']
+
+Enter your action: 66
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 4, 7, 7, 9, 9]
+
+Ai hand: [2, 5, 5, 5, 7, 8]
+
+our valid_actions:  ['2', '4', '7', '7', '9', '9', '77', '99']
+
+Enter your action: 2
+ai valid_actions:  ['5', '5', '5', '7', '8', 'pass']
+AI played: 8
+Enter your rating (-10-10): 3
+Enter suggested action: 7
+
+Your hand: [4, 7, 7, 9, 9]
+
+Ai hand: [2, 5, 5, 5, 7]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 7, 7, 9]
+
+Ai hand: [2, 5, 5, 5, 7]
+
+our valid_actions:  ['4', '7', '7', '9', '77']
+
+Enter your action: 4
+ai valid_actions:  ['5', '5', '5', '7', 'pass']
+AI played: 7
+Enter your rating (-10-10): 7
+Enter suggested action: 7
+
+Your hand: [7, 7, 9]
+
+Ai hand: [2, 5, 5, 5]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [7, 7]
+
+Ai hand: [2, 5, 5, 5]
+
+our valid_actions:  ['7', '7', '77']
+
+Enter your action: 77
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): n
+
+Process finished with exit code 0
+
+
+C:\Users\admin\AppData\Local\Programs\Python\Python311\python.exe D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py
+Loading existing model...
+
+=== New Game ===
+
+Your hand: [2, 2, 3, 3, 5, 5, 6, 7, 9, 9]
+
+Ai hand: [1, 2, 5, 6, 6, 7, 7, 7, 8, 9]
+
+our valid_actions:  ['2', '2', '3', '3', '5', '5', '6', '7', '9', '9', '22', '33', '55', '99']
+
+Enter your action: 22
+ai valid_actions:  ['66', '77', '77', 'pass']
+AI played: 66
+Enter your rating (-10-10): 7
+Enter suggested action: 66
+
+Your hand: [3, 3, 5, 5, 6, 7, 9, 9]
+
+Ai hand: [1, 2, 5, 7, 7, 7, 8, 9]
+
+our valid_actions:  ['99', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '5', '7', '7', '7', '8', '9', '77', '77', '7771', '7772', '7775', '7778', '7779']
+AI played: 8
+Enter your rating (-10-10): 1
+Enter suggested action: 1
+
+Your hand: [3, 3, 5, 5, 6, 7, 9, 9]
+
+Ai hand: [1, 2, 5, 7, 7, 7, 9]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '5', '7', '7', '7', '9', '77', '77', '7771', '7772', '7775', '7779']
+AI played: 7
+Enter your rating (-10-10): 2
+Enter suggested action: 1
+
+Your hand: [3, 3, 5, 5, 6, 7, 9, 9]
+
+Ai hand: [1, 2, 5, 7, 7, 9]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '5', '7', '7', '9', '77']
+AI played: 7
+Enter your rating (-10-10): -5
+Enter suggested action: 1
+
+Your hand: [3, 3, 5, 5, 6, 7, 9, 9]
+
+Ai hand: [1, 2, 5, 7, 9]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '5', '7', '9']
+AI played: 7
+Enter your rating (-10-10): -10
+Enter suggested action: 1
+
+Your hand: [3, 3, 5, 5, 6, 7, 9, 9]
+
+Ai hand: [1, 2, 5, 9]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '5', '9']
+AI played: 1
+Enter your rating (-10-10): 6
+Enter suggested action: 1
+
+Your hand: [3, 3, 5, 5, 6, 7, 9, 9]
+
+Ai hand: [2, 5, 9]
+
+our valid_actions:  ['3', '3', '5', '5', '6', '7', '9', '9', 'pass']
+
+Enter your action: 6
+ai valid_actions:  ['9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 5
+Enter suggested action: 9
+
+Your hand: [3, 3, 5, 5, 7, 9, 9]
+
+Ai hand: [2, 5]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '5']
+AI played: 2
+Enter your rating (-10-10): 7
+Enter suggested action: 2
+
+Your hand: [3, 3, 5, 5, 7, 9, 9]
+
+Ai hand: [5]
+
+our valid_actions:  ['3', '3', '5', '5', '7', '9', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 3, 5, 5, 9, 9]
+
+Ai hand: [5]
+
+our valid_actions:  ['3', '3', '5', '5', '9', '9', '33', '55', '99']
+
+Enter your action: 33
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5, 5, 9, 9]
+
+Ai hand: [5]
+
+our valid_actions:  ['5', '5', '9', '9', '55', '99']
+
+Enter your action: 55
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [9, 9]
+
+Ai hand: [5]
+
+our valid_actions:  ['9', '9', '99']
+
+Enter your action: 99
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 2, 3, 4, 4, 5, 7, 8, 9]
+
+Ai hand: [1, 2, 2, 3, 3, 5, 5, 6, 7, 8]
+
+our valid_actions:  ['1', '1', '2', '3', '4', '4', '5', '7', '8', '9', '11', '44']
+
+Enter your action: 11
+ai valid_actions:  ['22', '33', '55', 'pass']
+AI played: 22
+Enter your rating (-10-10): 7
+Enter suggested action: 22
+
+Your hand: [2, 3, 4, 4, 5, 7, 8, 9]
+
+Ai hand: [1, 3, 3, 5, 5, 6, 7, 8]
+
+our valid_actions:  ['44', 'pass']
+
+Enter your action: 44
+ai valid_actions:  ['55', 'pass']
+AI played: 55
+Enter your rating (-10-10): 8
+Enter suggested action: 55
+
+Your hand: [2, 3, 5, 7, 8, 9]
+
+Ai hand: [1, 3, 3, 6, 7, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '3', '3', '6', '7', '8', '33']
+AI played: 1
+Enter your rating (-10-10): 7
+Enter suggested action: 1
+
+Your hand: [2, 3, 5, 7, 8, 9]
+
+Ai hand: [3, 3, 6, 7, 8]
+
+our valid_actions:  ['2', '3', '5', '7', '8', '9', 'pass']
+
+Enter your action: 2
+ai valid_actions:  ['3', '3', '6', '7', '8', 'pass']
+AI played: 6
+Enter your rating (-10-10): 7
+Enter suggested action: 6
+
+Your hand: [3, 5, 7, 8, 9]
+
+Ai hand: [3, 3, 7, 8]
+
+our valid_actions:  ['7', '8', '9', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 5, 7, 9]
+
+Ai hand: [3, 3, 7, 8]
+
+our valid_actions:  ['3', '5', '7', '9']
+
+Enter your action: 3
+ai valid_actions:  ['7', '8', 'pass']
+AI played: 8
+Enter your rating (-10-10): 5
+Enter suggested action: 7
+
+Your hand: [5, 7, 9]
+
+Ai hand: [3, 3, 7]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5, 7]
+
+Ai hand: [3, 3, 7]
+
+our valid_actions:  ['5', '7']
+
+Enter your action: 5
+ai valid_actions:  ['7', 'pass']
+AI played: 7
+Enter your rating (-10-10): 9
+Enter suggested action: 7
+
+Your hand: [7]
+
+Ai hand: [3, 3]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['3', '3', '33']
+AI played: 33
+Enter your rating (-10-10): 10
+Enter suggested action: 33
+AI wins!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [2, 3, 4, 5, 5, 7, 8, 9, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 4, 5, 5, 6, 7, 8]
+
+our valid_actions:  ['2', '3', '4', '5', '5', '7', '8', '9', '9', '9', '55', '99', '99', '9992', '9993', '9994', '9995', '9995', '9997', '9998']
+
+Enter your action: 2
+ai valid_actions:  ['4', '4', '5', '5', '6', '7', '8', 'pass']
+AI played: 6
+Enter your rating (-10-10): 7
+Enter suggested action: 6
+
+Your hand: [3, 4, 5, 5, 7, 8, 9, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 4, 5, 5, 7, 8]
+
+our valid_actions:  ['7', '8', '9', '9', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['8', 'pass']
+AI played: 8
+Enter your rating (-10-10): 8
+Enter suggested action: 8
+
+Your hand: [3, 4, 5, 5, 8, 9, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 4, 5, 5, 7]
+
+our valid_actions:  ['9', '9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 4, 5, 5, 8, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 4, 5, 5, 7]
+
+our valid_actions:  ['3', '4', '5', '5', '8', '9', '9', '55', '99']
+
+Enter your action: 3
+ai valid_actions:  ['4', '4', '5', '5', '7', 'pass']
+AI played: 4
+Enter your rating (-10-10): 6
+Enter suggested action: 4
+
+Your hand: [4, 5, 5, 8, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 5, 5, 7]
+
+our valid_actions:  ['5', '5', '8', '9', '9', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 5, 5, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 5, 5, 7]
+
+our valid_actions:  ['4', '5', '5', '9', '9', '55', '99']
+
+Enter your action: 55
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 9, 9]
+
+Ai hand: [1, 1, 2, 4, 5, 5, 7]
+
+our valid_actions:  ['4', '9', '9', '99']
+
+Enter your action: 99
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4]
+
+Ai hand: [1, 1, 2, 4, 5, 5, 7]
+
+our valid_actions:  ['4']
+
+Enter your action: 4
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 3, 4, 5, 6, 6, 7, 8, 8, 8]
+
+Ai hand: [2, 4, 5, 5, 6, 7, 7, 8, 9, 9]
+
+our valid_actions:  ['1', '3', '4', '5', '6', '6', '7', '8', '8', '8', '66', '88', '88', '8881', '8883', '8884', '8885', '8886', '8886', '8887']
+
+Enter your action: 1
+ai valid_actions:  ['2', '4', '5', '5', '6', '7', '7', '8', '9', '9', 'pass']
+AI played: 6
+Enter your rating (-10-10): 2
+Enter suggested action: 2
+
+Your hand: [3, 4, 5, 6, 6, 7, 8, 8, 8]
+
+Ai hand: [2, 4, 5, 5, 7, 7, 8, 9, 9]
+
+our valid_actions:  ['7', '8', '8', '8', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['8', '9', '9', 'pass']
+AI played: 8
+Enter your rating (-10-10): 6
+Enter suggested action: 8
+
+Your hand: [3, 4, 5, 6, 6, 8, 8, 8]
+
+Ai hand: [2, 4, 5, 5, 7, 7, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '4', '5', '5', '7', '7', '9', '9', '55', '77', '99']
+AI played: 55
+Enter your rating (-10-10): 5
+Enter suggested action: 2
+
+Your hand: [3, 4, 5, 6, 6, 8, 8, 8]
+
+Ai hand: [2, 4, 7, 7, 9, 9]
+
+our valid_actions:  ['66', '88', '88', 'pass']
+
+Enter your action: 66
+ai valid_actions:  ['77', '99', 'pass']
+AI played: 77
+Enter your rating (-10-10): 6
+Enter suggested action: 77
+
+Your hand: [3, 4, 5, 8, 8, 8]
+
+Ai hand: [2, 4, 9, 9]
+
+our valid_actions:  ['88', '88', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '4', '9', '9', '99']
+AI played: 4
+Enter your rating (-10-10): 3
+Enter suggested action: 2
+
+Your hand: [3, 4, 5, 8, 8, 8]
+
+Ai hand: [2, 9, 9]
+
+our valid_actions:  ['5', '8', '8', '8', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 8
+Enter suggested action: 9
+
+Your hand: [3, 4, 8, 8, 8]
+
+Ai hand: [2, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '9']
+AI played: 9
+Enter your rating (-10-10): 10
+Enter suggested action: 9
+
+Your hand: [3, 4, 8, 8, 8]
+
+Ai hand: [2]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2']
+AI played: 2
+Enter your rating (-10-10): 2
+Enter suggested action: 2
+AI wins!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 2, 2, 3, 4, 5, 6, 9, 9]
+
+Ai hand: [3, 3, 4, 5, 5, 5, 6, 7, 7, 8]
+
+our valid_actions:  ['1', '1', '2', '2', '3', '4', '5', '6', '9', '9', '11', '22', '99']
+
+Enter your action: 11
+ai valid_actions:  ['33', '55', '55', '77', 'pass']
+AI played: 33
+Enter your rating (-10-10): 8
+Enter suggested action: 33
+
+Your hand: [2, 2, 3, 4, 5, 6, 9, 9]
+
+Ai hand: [4, 5, 5, 5, 6, 7, 7, 8]
+
+our valid_actions:  ['99', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['4', '5', '5', '5', '6', '7', '7', '8', '55', '55', '77', '5554', '5556', '5557', '5557', '5558']
+AI played: 6
+Enter your rating (-10-10): 3
+Enter suggested action: 5554
+
+Your hand: [2, 2, 3, 4, 5, 6, 9, 9]
+
+Ai hand: [4, 5, 5, 5, 7, 7, 8]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 2, 3, 4, 5, 6, 9]
+
+Ai hand: [4, 5, 5, 5, 7, 7, 8]
+
+our valid_actions:  ['2', '2', '3', '4', '5', '6', '9', '22']
+
+Enter your action: 22
+ai valid_actions:  ['55', '55', '77', 'pass']
+AI played: 55
+Enter your rating (-10-10): -5
+Enter suggested action: 77
+
+Your hand: [3, 4, 5, 6, 9]
+
+Ai hand: [4, 5, 7, 7, 8]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['4', '5', '7', '7', '8', '77']
+AI played: 8
+Enter your rating (-10-10): 0
+Enter suggested action: 4
+
+Your hand: [3, 4, 5, 6, 9]
+
+Ai hand: [4, 5, 7, 7]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 4, 5, 6]
+
+Ai hand: [4, 5, 7, 7]
+
+our valid_actions:  ['3', '4', '5', '6']
+
+Enter your action: 3
+ai valid_actions:  ['4', '5', '7', '7', 'pass']
+AI played: 4
+Enter your rating (-10-10): 7
+Enter suggested action: 4
+
+Your hand: [4, 5, 6]
+
+Ai hand: [5, 7, 7]
+
+our valid_actions:  ['5', '6', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['7', '7', 'pass']
+AI played: 7
+Enter your rating (-10-10): 5
+Enter suggested action: 7
+
+Your hand: [4, 6]
+
+Ai hand: [5, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['5', '7']
+AI played: 7
+Enter your rating (-10-10): 10
+Enter suggested action: 7
+
+Your hand: [4, 6]
+
+Ai hand: [5]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['5']
+AI played: 5
+Enter your rating (-10-10): 3
+Enter suggested action: 5
+AI wins!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 1, 1, 3, 3, 4, 4, 6, 9]
+
+Ai hand: [2, 4, 4, 5, 6, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['1', '1', '1', '1', '3', '3', '4', '4', '6', '9', '11', '11', '11', '33', '44', '1113', '1113', '1114', '1114', '1116', '1119', '1113', '1113', '1114', '1114', '1116', '1119']
+
+Enter your action: 1116
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [1, 3, 3, 4, 4, 9]
+
+Ai hand: [2, 4, 4, 5, 6, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['1', '3', '3', '4', '4', '9', '33', '44']
+
+Enter your action: 33
+ai valid_actions:  ['44', '66', '99', 'pass']
+AI played: 44
+Enter your rating (-10-10): 7
+Enter suggested action: 44
+
+Your hand: [1, 4, 4, 9]
+
+Ai hand: [2, 5, 6, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '5', '6', '6', '7', '8', '9', '9', '66', '99']
+AI played: 6
+Enter your rating (-10-10): 1
+Enter suggested action: 2
+
+Your hand: [1, 4, 4, 9]
+
+Ai hand: [2, 5, 6, 7, 8, 9, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '5', '6', '7', '8', '9', '9', '99']
+AI played: 6
+Enter your rating (-10-10): 1
+Enter suggested action: 6
+
+Your hand: [1, 4, 4, 9]
+
+Ai hand: [2, 5, 7, 8, 9, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '5', '7', '8', '9', '9', '99']
+AI played: 8
+Enter your rating (-10-10): -3
+Enter suggested action: 2
+
+Your hand: [1, 4, 4, 9]
+
+Ai hand: [2, 5, 7, 9, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '5', '7', '9', '9', '99']
+AI played: 7
+Enter your rating (-10-10): -2
+Enter suggested action: 2
+
+Your hand: [1, 4, 4, 9]
+
+Ai hand: [2, 5, 9, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '5', '9', '9', '99']
+AI played: 9
+Enter your rating (-10-10): -5
+Enter suggested action: 2
+
+Your hand: [1, 4, 4, 9]
+
+Ai hand: [2, 5, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '5', '9']
+AI played: 9
+Enter your rating (-10-10): -10
+Enter suggested action: 2
+
+Your hand: [1, 4, 4, 9]
+
+Ai hand: [2, 5]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '5']
+AI played: 2
+Enter your rating (-10-10): 9
+Enter suggested action: 2
+
+Your hand: [1, 4, 4, 9]
+
+Ai hand: [5]
+
+our valid_actions:  ['4', '4', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [1, 4, 4]
+
+Ai hand: [5]
+
+our valid_actions:  ['1', '4', '4', '44']
+
+Enter your action: 44
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [1]
+
+Ai hand: [5]
+
+our valid_actions:  ['1']
+
+Enter your action: 1
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 3, 4, 5, 7, 9, 9, 9, 9]
+
+Ai hand: [1, 3, 3, 3, 4, 4, 5, 7, 8, 8]
+
+our valid_actions:  ['1', '2', '3', '4', '5', '7', '9', '9', '9', '9', '99', '99', '99', '9991', '9992', '9993', '9994', '9995', '9997', '9991', '9992', '9993', '9994', '9995', '9997']
+
+Enter your action: 1
+ai valid_actions:  ['3', '3', '3', '4', '4', '5', '7', '8', '8', 'pass']
+AI played: 8
+Enter your rating (-10-10): 2
+Enter suggested action: 5
+
+Your hand: [2, 3, 4, 5, 7, 9, 9, 9, 9]
+
+Ai hand: [1, 3, 3, 3, 4, 4, 5, 7, 8]
+
+our valid_actions:  ['9', '9', '9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 3, 4, 5, 7, 9, 9, 9]
+
+Ai hand: [1, 3, 3, 3, 4, 4, 5, 7, 8]
+
+our valid_actions:  ['2', '3', '4', '5', '7', '9', '9', '9', '99', '99', '9992', '9993', '9994', '9995', '9997']
+
+Enter your action: 2
+ai valid_actions:  ['3', '3', '3', '4', '4', '5', '7', '8', 'pass']
+AI played: 4
+Enter your rating (-10-10): 3
+Enter suggested action: 5
+
+Your hand: [3, 4, 5, 7, 9, 9, 9]
+
+Ai hand: [1, 3, 3, 3, 4, 5, 7, 8]
+
+our valid_actions:  ['5', '7', '9', '9', '9', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['7', '8', 'pass']
+AI played: 8
+Enter your rating (-10-10): 4
+Enter suggested action: 7
+
+Your hand: [3, 4, 7, 9, 9, 9]
+
+Ai hand: [1, 3, 3, 3, 4, 5, 7]
+
+our valid_actions:  ['9', '9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 4, 7, 9, 9]
+
+Ai hand: [1, 3, 3, 3, 4, 5, 7]
+
+our valid_actions:  ['3', '4', '7', '9', '9', '99']
+
+Enter your action: 3
+ai valid_actions:  ['4', '5', '7', 'pass']
+AI played: 4
+Enter your rating (-10-10): 7
+Enter suggested action: 4
+
+Your hand: [4, 7, 9, 9]
+
+Ai hand: [1, 3, 3, 3, 5, 7]
+
+our valid_actions:  ['7', '9', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 9, 9]
+
+Ai hand: [1, 3, 3, 3, 5, 7]
+
+our valid_actions:  ['4', '9', '9', '99']
+
+Enter your action: 99
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4]
+
+Ai hand: [1, 3, 3, 3, 5, 7]
+
+our valid_actions:  ['4']
+
+Enter your action: 4
+You win!
+D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py:389: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:257.)
+  states = torch.tensor(states, dtype=torch.float32)
+Model saved as models/model_teach.pth
+Continue training? (y/n): n
+
+Process finished with exit code 0
+
+
+C:\Users\admin\AppData\Local\Programs\Python\Python311\python.exe D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py
+Loading existing model...
+
+=== New Game ===
+
+Your hand: [4, 4, 5, 5, 6, 6, 6, 7, 9, 9]
+
+Ai hand: [2, 2, 3, 3, 5, 5, 7, 7, 8, 8]
+
+our valid_actions:  ['4', '4', '5', '5', '6', '6', '6', '7', '9', '9', '44', '55', '66', '66', '99', '6664', '6664', '6665', '6665', '6667', '6669', '6669']
+
+Enter your action: 44
+ai valid_actions:  ['55', '77', '88', 'pass']
+AI played: 55
+Enter your rating (-10-10): 5
+Enter suggested action: 55
+
+Your hand: [5, 5, 6, 6, 6, 7, 9, 9]
+
+Ai hand: [2, 2, 3, 3, 7, 7, 8, 8]
+
+our valid_actions:  ['66', '66', '99', 'pass']
+
+Enter your action: 66
+ai valid_actions:  ['77', '88', 'pass']
+AI played: 88
+Enter your rating (-10-10): 3
+Enter suggested action: 77
+
+Your hand: [5, 5, 6, 7, 9, 9]
+
+Ai hand: [2, 2, 3, 3, 7, 7]
+
+our valid_actions:  ['99', 'pass']
+
+Enter your action: 99
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5, 5, 6, 7]
+
+Ai hand: [2, 2, 3, 3, 7, 7]
+
+our valid_actions:  ['5', '5', '6', '7', '55']
+
+Enter your action: 55
+ai valid_actions:  ['77', 'pass']
+AI played: 77
+Enter your rating (-10-10): 6
+Enter suggested action: 77
+
+Your hand: [6, 7]
+
+Ai hand: [2, 2, 3, 3]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '2', '3', '3', '22', '33']
+AI played: 33
+Enter your rating (-10-10): 3
+Enter suggested action: 22
+
+Your hand: [6, 7]
+
+Ai hand: [2, 2]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['2', '2', '22']
+AI played: 22
+Enter your rating (-10-10): 5
+Enter suggested action: 22
+AI wins!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 3, 3, 4, 4, 5, 7, 8, 9]
+
+Ai hand: [1, 1, 3, 5, 5, 5, 6, 7, 9, 9]
+
+our valid_actions:  ['1', '2', '3', '3', '4', '4', '5', '7', '8', '9', '33', '44']
+
+Enter your action: 1
+ai valid_actions:  ['3', '5', '5', '5', '6', '7', '9', '9', 'pass']
+AI played: 6
+Enter your rating (-10-10): 2
+Enter suggested action: 3
+
+Your hand: [2, 3, 3, 4, 4, 5, 7, 8, 9]
+
+Ai hand: [1, 1, 3, 5, 5, 5, 7, 9, 9]
+
+our valid_actions:  ['7', '8', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['9', '9', 'pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: 9
+
+Your hand: [2, 3, 3, 4, 4, 5, 8, 9]
+
+Ai hand: [1, 1, 3, 5, 5, 5, 7, 9, 9]
+
+our valid_actions:  ['2', '3', '3', '4', '4', '5', '8', '9', '33', '44']
+
+Enter your action: 2
+ai valid_actions:  ['3', '5', '5', '5', '7', '9', '9', 'pass']
+AI played: 7
+Enter your rating (-10-10): 2
+Enter suggested action: 3
+
+Your hand: [3, 3, 4, 4, 5, 8, 9]
+
+Ai hand: [1, 1, 3, 5, 5, 5, 9, 9]
+
+our valid_actions:  ['8', '9', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 6
+Enter suggested action: 9
+
+Your hand: [3, 3, 4, 4, 5, 9]
+
+Ai hand: [1, 1, 3, 5, 5, 5, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '3', '5', '5', '5', '9', '11', '55', '55', '5551', '5551', '5553', '5559']
+AI played: 55
+Enter your rating (-10-10): -3
+Enter suggested action: 5553
+
+Your hand: [3, 3, 4, 4, 5, 9]
+
+Ai hand: [1, 1, 3, 5, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '3', '5', '9', '11']
+AI played: 1
+Enter your rating (-10-10): -3
+Enter suggested action: 3
+
+Your hand: [3, 3, 4, 4, 5, 9]
+
+Ai hand: [1, 3, 5, 9]
+
+our valid_actions:  ['3', '3', '4', '4', '5', '9', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 2
+Enter suggested action: 9
+
+Your hand: [3, 3, 4, 4, 9]
+
+Ai hand: [1, 3, 5]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '3', '5']
+AI played: 5
+Enter your rating (-10-10): -3
+Enter suggested action: 1
+
+Your hand: [3, 3, 4, 4, 9]
+
+Ai hand: [1, 3]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 3, 4, 4]
+
+Ai hand: [1, 3]
+
+our valid_actions:  ['3', '3', '4', '4', '33', '44']
+
+Enter your action: 33
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 4]
+
+Ai hand: [1, 3]
+
+our valid_actions:  ['4', '4', '44']
+
+Enter your action: 44
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 3, 5, 6, 7, 8, 8, 9, 9]
+
+Ai hand: [1, 2, 3, 3, 4, 5, 6, 6, 7, 8]
+
+our valid_actions:  ['1', '2', '3', '5', '6', '7', '8', '8', '9', '9', '88', '99']
+
+Enter your action: 1
+ai valid_actions:  ['2', '3', '3', '4', '5', '6', '6', '7', '8', 'pass']
+AI played: 3
+Enter your rating (-10-10): 1
+Enter suggested action: 2
+
+Your hand: [2, 3, 5, 6, 7, 8, 8, 9, 9]
+
+Ai hand: [1, 2, 3, 4, 5, 6, 6, 7, 8]
+
+our valid_actions:  ['5', '6', '7', '8', '8', '9', '9', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['6', '6', '7', '8', 'pass']
+AI played: 6
+Enter your rating (-10-10): -3
+Enter suggested action: 7
+
+Your hand: [2, 3, 6, 7, 8, 8, 9, 9]
+
+Ai hand: [1, 2, 3, 4, 5, 6, 7, 8]
+
+our valid_actions:  ['7', '8', '8', '9', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['8', 'pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: 8
+
+Your hand: [2, 3, 6, 8, 8, 9, 9]
+
+Ai hand: [1, 2, 3, 4, 5, 6, 7, 8]
+
+our valid_actions:  ['2', '3', '6', '8', '8', '9', '9', '88', '99']
+
+Enter your action: 2
+ai valid_actions:  ['3', '4', '5', '6', '7', '8', 'pass']
+AI played: 6
+Enter your rating (-10-10): -3
+Enter suggested action: 3
+
+Your hand: [3, 6, 8, 8, 9, 9]
+
+Ai hand: [1, 2, 3, 4, 5, 7, 8]
+
+our valid_actions:  ['8', '8', '9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 6, 8, 8, 9]
+
+Ai hand: [1, 2, 3, 4, 5, 7, 8]
+
+our valid_actions:  ['3', '6', '8', '8', '9', '88']
+
+Enter your action: 3
+ai valid_actions:  ['4', '5', '7', '8', 'pass']
+AI played: 8
+Enter your rating (-10-10): -3
+Enter suggested action: 4
+
+Your hand: [6, 8, 8, 9]
+
+Ai hand: [1, 2, 3, 4, 5, 7]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [6, 8, 8]
+
+Ai hand: [1, 2, 3, 4, 5, 7]
+
+our valid_actions:  ['6', '8', '8', '88']
+
+Enter your action: 88
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [6]
+
+Ai hand: [1, 2, 3, 4, 5, 7]
+
+our valid_actions:  ['6']
+
+Enter your action: 6
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 4, 4, 5, 6, 6, 6, 7, 9]
+
+Ai hand: [1, 2, 3, 3, 3, 4, 5, 7, 7, 9]
+
+our valid_actions:  ['1', '2', '4', '4', '5', '6', '6', '6', '7', '9', '44', '66', '66', '6661', '6662', '6664', '6664', '6665', '6667', '6669']
+
+Enter your action: 1
+ai valid_actions:  ['2', '3', '3', '3', '4', '5', '7', '7', '9', 'pass']
+AI played: 4
+Enter your rating (-10-10): 3
+Enter suggested action: 2
+
+Your hand: [2, 4, 4, 5, 6, 6, 6, 7, 9]
+
+Ai hand: [1, 2, 3, 3, 3, 5, 7, 7, 9]
+
+our valid_actions:  ['5', '6', '6', '6', '7', '9', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['7', '7', '9', 'pass']
+AI played: 7
+Enter your rating (-10-10): 4
+Enter suggested action: 7
+
+Your hand: [2, 4, 4, 6, 6, 6, 7, 9]
+
+Ai hand: [1, 2, 3, 3, 3, 5, 7, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 4, 4, 6, 6, 6, 7]
+
+Ai hand: [1, 2, 3, 3, 3, 5, 7, 9]
+
+our valid_actions:  ['2', '4', '4', '6', '6', '6', '7', '44', '66', '66', '6662', '6664', '6664', '6667']
+
+Enter your action: 6662
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 4, 7]
+
+Ai hand: [1, 2, 3, 3, 3, 5, 7, 9]
+
+our valid_actions:  ['4', '4', '7', '44']
+
+Enter your action: 44
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [7]
+
+Ai hand: [1, 2, 3, 3, 3, 5, 7, 9]
+
+our valid_actions:  ['7']
+
+Enter your action: 7
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 2, 2, 4, 5, 7, 7, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 4, 5, 7, 7, 9, 9]
+
+our valid_actions:  ['1', '1', '2', '2', '4', '5', '7', '7', '8', '9', '11', '22', '77']
+
+Enter your action: 11
+ai valid_actions:  ['33', '77', '99', 'pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: 33
+
+Your hand: [2, 2, 4, 5, 7, 7, 8, 9]
+
+Ai hand: [1, 2, 3, 3, 4, 5, 7, 7, 9, 9]
+
+our valid_actions:  ['2', '2', '4', '5', '7', '7', '8', '9', '22', '77']
+
+Enter your action: 22
+ai valid_actions:  ['33', '77', '99', 'pass']
+AI played: 33
+Enter your rating (-10-10): 8
+Enter suggested action: 33
+
+Your hand: [4, 5, 7, 7, 8, 9]
+
+Ai hand: [1, 2, 4, 5, 7, 7, 9, 9]
+
+our valid_actions:  ['77', 'pass']
+
+Enter your action: 77
+ai valid_actions:  ['99', 'pass']
+AI played: 99
+Enter your rating (-10-10): 5
+Enter suggested action: 99
+
+Your hand: [4, 5, 8, 9]
+
+Ai hand: [1, 2, 4, 5, 7, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '4', '5', '7', '7', '77']
+AI played: 4
+Enter your rating (-10-10): -1
+Enter suggested action: 1
+
+Your hand: [4, 5, 8, 9]
+
+Ai hand: [1, 2, 5, 7, 7]
+
+our valid_actions:  ['5', '8', '9', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['7', '7', 'pass']
+AI played: 7
+Enter your rating (-10-10): 4
+Enter suggested action: 7
+
+Your hand: [4, 8, 9]
+
+Ai hand: [1, 2, 5, 7]
+
+our valid_actions:  ['8', '9', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 9]
+
+Ai hand: [1, 2, 5, 7]
+
+our valid_actions:  ['4', '9']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4]
+
+Ai hand: [1, 2, 5, 7]
+
+our valid_actions:  ['4']
+
+Enter your action: 4
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 3, 3, 4, 6, 6, 6, 7, 8]
+
+Ai hand: [3, 4, 4, 5, 5, 6, 7, 7, 8, 9]
+
+our valid_actions:  ['1', '2', '3', '3', '4', '6', '6', '6', '7', '8', '33', '66', '66', '6661', '6662', '6663', '6663', '6664', '6667', '6668']
+
+Enter your action: 1
+ai valid_actions:  ['3', '4', '4', '5', '5', '6', '7', '7', '8', '9', 'pass']
+AI played: 6
+Enter your rating (-10-10): -2
+Enter suggested action: 3
+
+Your hand: [2, 3, 3, 4, 6, 6, 6, 7, 8]
+
+Ai hand: [3, 4, 4, 5, 5, 7, 7, 8, 9]
+
+our valid_actions:  ['7', '8', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['8', '9', 'pass']
+AI played: 8
+Enter your rating (-10-10): 6
+Enter suggested action: 8
+
+Your hand: [2, 3, 3, 4, 6, 6, 6, 8]
+
+Ai hand: [3, 4, 4, 5, 5, 7, 7, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['3', '4', '4', '5', '5', '7', '7', '9', '44', '55', '77']
+AI played: 55
+Enter your rating (-10-10): 3
+Enter suggested action: 44
+
+Your hand: [2, 3, 3, 4, 6, 6, 6, 8]
+
+Ai hand: [3, 4, 4, 7, 7, 9]
+
+our valid_actions:  ['66', '66', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['3', '4', '4', '7', '7', '9', '44', '77']
+AI played: 4
+Enter your rating (-10-10): -2
+Enter suggested action: 3
+
+Your hand: [2, 3, 3, 4, 6, 6, 6, 8]
+
+Ai hand: [3, 4, 7, 7, 9]
+
+our valid_actions:  ['6', '6', '6', '8', 'pass']
+
+Enter your action: 8
+ai valid_actions:  ['9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 49
+Enter your rating (-10-10): 9
+Enter suggested action: 9
+
+Your hand: [2, 3, 3, 4, 6, 6, 6]
+
+Ai hand: [3, 4, 7, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['3', '4', '7', '7', '77']
+AI played: 4
+Enter your rating (-10-10): 1
+Enter suggested action: 3
+
+Your hand: [2, 3, 3, 4, 6, 6, 6]
+
+Ai hand: [3, 7, 7]
+
+our valid_actions:  ['6', '6', '6', 'pass']
+
+Enter your action: 6
+ai valid_actions:  ['7', '7', 'pass']
+AI played: 7
+Enter your rating (-10-10): 7
+Enter suggested action: 7
+
+Your hand: [2, 3, 3, 4, 6, 6]
+
+Ai hand: [3, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['3', '7']
+AI played: 7
+Enter your rating (-10-10): 9
+Enter suggested action: 7
+
+Your hand: [2, 3, 3, 4, 6, 6]
+
+Ai hand: [3]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['3']
+AI played: 3
+Enter your rating (-10-10): 4
+Enter suggested action: 3
+AI wins!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 3, 3, 4, 4, 5, 6, 6, 7, 9]
+
+Ai hand: [1, 1, 5, 5, 7, 8, 8, 8, 9, 9]
+
+our valid_actions:  ['1', '3', '3', '4', '4', '5', '6', '6', '7', '9', '33', '44', '66']
+
+Enter your action: 1
+ai valid_actions:  ['5', '5', '7', '8', '8', '8', '9', '9', 'pass']
+AI played: 8
+Enter your rating (-10-10): -6
+Enter suggested action: 7
+
+Your hand: [3, 3, 4, 4, 5, 6, 6, 7, 9]
+
+Ai hand: [1, 1, 5, 5, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [3, 3, 4, 4, 5, 6, 6, 7]
+
+Ai hand: [1, 1, 5, 5, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['3', '3', '4', '4', '5', '6', '6', '7', '33', '44', '66']
+
+Enter your action: 33
+ai valid_actions:  ['55', '88', '99', 'pass']
+AI played: 55
+Enter your rating (-10-10): 6
+Enter suggested action: 55
+
+Your hand: [4, 4, 5, 6, 6, 7]
+
+Ai hand: [1, 1, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['66', 'pass']
+
+Enter your action: 66
+ai valid_actions:  ['88', '99', 'pass']
+AI played: 88
+Enter your rating (-10-10): 6
+Enter suggested action: 88
+
+Your hand: [4, 4, 5, 7]
+
+Ai hand: [1, 1, 7, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '7', '9', '9', '11', '99']
+AI played: 7
+Enter your rating (-10-10): -3
+Enter suggested action: 11
+
+Your hand: [4, 4, 5, 7]
+
+Ai hand: [1, 1, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '9', '9', '11', '99']
+AI played: 1
+Enter your rating (-10-10): -4
+Enter suggested action: 11
+
+Your hand: [4, 4, 5, 7]
+
+Ai hand: [1, 9, 9]
+
+our valid_actions:  ['4', '4', '5', '7', 'pass']
+
+Enter your action: 5
+ai valid_actions:  ['9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 5
+Enter suggested action: 9
+
+Your hand: [4, 4, 7]
+
+Ai hand: [1, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '9']
+AI played: 1
+Enter your rating (-10-10): 3
+Enter suggested action: 1
+
+Your hand: [4, 4, 7]
+
+Ai hand: [9]
+
+our valid_actions:  ['4', '4', '7', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 3
+Enter suggested action: 9
+AI wins!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 3, 3, 3, 5, 7, 8, 8, 9]
+
+Ai hand: [1, 2, 2, 4, 5, 6, 7, 7, 9, 9]
+
+our valid_actions:  ['1', '2', '3', '3', '3', '5', '7', '8', '8', '9', '33', '33', '88', '3331', '3332', '3335', '3337', '3338', '3338', '3339']
+
+Enter your action: 1
+ai valid_actions:  ['2', '2', '4', '5', '6', '7', '7', '9', '9', 'pass']
+AI played: 6
+Enter your rating (-10-10): 2
+Enter suggested action:
+Enter suggested action: 4
+
+Your hand: [2, 3, 3, 3, 5, 7, 8, 8, 9]
+
+Ai hand: [1, 2, 2, 4, 5, 7, 7, 9, 9]
+
+our valid_actions:  ['7', '8', '8', '9', 'pass']
+
+Enter your action: 7
+ai valid_actions:  ['9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 4
+Enter suggested action: 9
+
+Your hand: [2, 3, 3, 3, 5, 8, 8, 9]
+
+Ai hand: [1, 2, 2, 4, 5, 7, 7, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '2', '4', '5', '7', '7', '9', '22', '77']
+AI played: 22
+Enter your rating (-10-10): 6
+Enter suggested action: 22
+
+Your hand: [2, 3, 3, 3, 5, 8, 8, 9]
+
+Ai hand: [1, 4, 5, 7, 7, 9]
+
+our valid_actions:  ['33', '33', '88', 'pass']
+
+Enter your action: 88
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 3, 3, 3, 5, 9]
+
+Ai hand: [1, 4, 5, 7, 7, 9]
+
+our valid_actions:  ['2', '3', '3', '3', '5', '9', '33', '33', '3332', '3335', '3339']
+
+Enter your action: 3332
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5, 9]
+
+Ai hand: [1, 4, 5, 7, 7, 9]
+
+our valid_actions:  ['5', '9']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5]
+
+Ai hand: [1, 4, 5, 7, 7, 9]
+
+our valid_actions:  ['5']
+
+Enter your action: 5
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 3, 4, 4, 5, 5, 6, 8, 8, 8]
+
+Ai hand: [1, 2, 3, 4, 5, 6, 7, 7, 9, 9]
+
+our valid_actions:  ['1', '3', '4', '4', '5', '5', '6', '8', '8', '8', '44', '55', '88', '88', '8881', '8883', '8884', '8884', '8885', '8885', '8886']
+
+Enter your action: 1
+ai valid_actions:  ['2', '3', '4', '5', '6', '7', '7', '9', '9', 'pass']
+AI played: 6
+Enter your rating (-10-10): -4
+Enter suggested action: 2
+
+Your hand: [3, 4, 4, 5, 5, 6, 8, 8, 8]
+
+Ai hand: [1, 2, 3, 4, 5, 7, 7, 9, 9]
+
+our valid_actions:  ['8', '8', '8', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '3', '4', '5', '7', '7', '9', '9', '77', '99']
+AI played: 4
+Enter your rating (-10-10): -4
+Enter suggested action: 1
+
+Your hand: [3, 4, 4, 5, 5, 6, 8, 8, 8]
+
+Ai hand: [1, 2, 3, 5, 7, 7, 9, 9]
+
+our valid_actions:  ['5', '5', '6', '8', '8', '8', 'pass']
+
+Enter your action: 6
+ai valid_actions:  ['7', '7', '9', '9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 6
+Enter suggested action: 9
+
+Your hand: [3, 4, 4, 5, 5, 8, 8, 8]
+
+Ai hand: [1, 2, 3, 5, 7, 7, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '3', '5', '7', '7', '9', '77']
+AI played: 7
+Enter your rating (-10-10):
+Enter your rating (-10-10): -5
+Enter suggested action: 1
+
+Your hand: [3, 4, 4, 5, 5, 8, 8, 8]
+
+Ai hand: [1, 2, 3, 5, 7, 9]
+
+our valid_actions:  ['8', '8', '8', 'pass']
+
+Enter your action: 怕8
+Invalid action. Try again.
+
+Enter your action: 8
+ai valid_actions:  ['9', 'pass']
+AI played: 9
+Enter your rating (-10-10): 4
+Enter suggested action: 9
+
+Your hand: [3, 4, 4, 5, 5, 8, 8]
+
+Ai hand: [1, 2, 3, 5, 7]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '2', '3', '5', '7']
+AI played: 2
+Enter your rating (-10-10): 3
+Enter suggested action: 1
+
+Your hand: [3, 4, 4, 5, 5, 8, 8]
+
+Ai hand: [1, 3, 5, 7]
+
+our valid_actions:  ['3', '4', '4', '5', '5', '8', '8', 'pass']
+
+Enter your action: 3
+ai valid_actions:  ['5', '7', 'pass']
+AI played: pass
+Enter your rating (-10-10): -5
+Enter suggested action: 5
+
+Your hand: [4, 4, 5, 5, 8, 8]
+
+Ai hand: [1, 3, 5, 7]
+
+our valid_actions:  ['4', '4', '5', '5', '8', '8', '44', '55', '88']
+
+Enter your action: 44
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5, 5, 8, 8]
+
+Ai hand: [1, 3, 5, 7]
+
+our valid_actions:  ['5', '5', '8', '8', '55', '88']
+
+Enter your action: 55
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [8, 8]
+
+Ai hand: [1, 3, 5, 7]
+
+our valid_actions:  ['8', '8', '88']
+
+Enter your action: 88
+You win!
+D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py:389: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_new.cpp:257.)
+  states = torch.tensor(states, dtype=torch.float32)
+Model saved as models/model_teach.pth
+Continue training? (y/n):
+
+C:\Users\admin\AppData\Local\Programs\Python\Python311\python.exe D:\HuaweiMoveData\Users\admin\Desktop\dqn\mod_teach\main.py
+Loading existing model...
+
+=== New Game ===
+
+Your hand: [1, 4, 4, 5, 5, 6, 7, 8, 9, 9]
+
+Ai hand: [1, 1, 1, 3, 6, 6, 8, 8, 9, 9]
+
+our valid_actions:  ['1', '4', '4', '5', '5', '6', '7', '8', '9', '9', '44', '55', '99']
+
+Enter your action: 1
+ai valid_actions:  ['3', '6', '6', '8', '8', '9', '9', 'pass']
+AI played: 8
+Enter your rating (-10-10): 2
+Enter suggested action: 3
+
+Your hand: [4, 4, 5, 5, 6, 7, 8, 9, 9]
+
+Ai hand: [1, 1, 1, 3, 6, 6, 8, 9, 9]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 4, 5, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 1, 1, 3, 6, 6, 8, 9, 9]
+
+our valid_actions:  ['4', '4', '5', '5', '6', '7', '8', '9', '44', '55']
+
+Enter your action: 44
+ai valid_actions:  ['66', '99', 'pass']
+AI played: 66
+Enter your rating (-10-10): 5
+Enter suggested action: 66
+
+Your hand: [5, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 1, 1, 3, 8, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '1', '3', '8', '9', '9', '11', '11', '99', '1113', '1118', '1119', '1119']
+AI played: 8
+Enter your rating (-10-10): 3
+Enter suggested action: 1113
+
+Your hand: [5, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 1, 1, 3, 9, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '1', '3', '9', '9', '11', '11', '99', '1113', '1119', '1119']
+AI played: 9
+Enter your rating (-10-10): -3
+Enter suggested action: 1113
+
+Your hand: [5, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 1, 1, 3, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '1', '3', '9', '11', '11', '1113', '1119']
+AI played: 9
+Enter your rating (-10-10): -3
+Enter suggested action: 1113
+
+Your hand: [5, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 1, 1, 3]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '1', '1', '3', '11', '11', '1113']
+AI played: 1
+Enter your rating (-10-10): -10
+Enter suggested action: 1113
+
+Your hand: [5, 5, 6, 7, 8, 9]
+
+Ai hand: [1, 1, 3]
+
+our valid_actions:  ['5', '5', '6', '7', '8', '9', 'pass']
+
+Enter your action: 6
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [5, 5, 7, 8, 9]
+
+Ai hand: [1, 1, 3]
+
+our valid_actions:  ['5', '5', '7', '8', '9', '55']
+
+Enter your action: 55
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): 2-
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [7, 8, 9]
+
+Ai hand: [1, 1, 3]
+
+our valid_actions:  ['7', '8', '9']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [7, 8]
+
+Ai hand: [1, 1, 3]
+
+our valid_actions:  ['7', '8']
+
+Enter your action: 8
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [7]
+
+Ai hand: [1, 1, 3]
+
+our valid_actions:  ['7']
+
+Enter your action: 7
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 2, 3, 4, 4, 6, 7, 7, 9, 9]
+
+Ai hand: [1, 1, 2, 3, 5, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['1', '2', '3', '4', '4', '6', '7', '7', '9', '9', '44', '77', '99']
+
+Enter your action: 1
+ai valid_actions:  ['2', '3', '5', '6', '7', '8', '8', '9', 'pass']
+AI played: 2
+Enter your rating (-10-10): 6
+Enter suggested action: 2
+
+Your hand: [2, 3, 4, 4, 6, 7, 7, 9, 9]
+
+Ai hand: [1, 1, 3, 5, 6, 7, 8, 8, 9]
+
+our valid_actions:  ['3', '4', '4', '6', '7', '7', '9', '9', 'pass']
+
+Enter your action: 3
+ai valid_actions:  ['5', '6', '7', '8', '8', '9', 'pass']
+AI played: 8
+Enter your rating (-10-10): 1
+Enter suggested action: 5
+
+Your hand: [2, 4, 4, 6, 7, 7, 9, 9]
+
+Ai hand: [1, 1, 3, 5, 6, 7, 8, 9]
+
+our valid_actions:  ['9', '9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [2, 4, 4, 6, 7, 7, 9]
+
+Ai hand: [1, 1, 3, 5, 6, 7, 8, 9]
+
+our valid_actions:  ['2', '4', '4', '6', '7', '7', '9', '44', '77']
+
+Enter your action: 2
+ai valid_actions:  ['3', '5', '6', '7', '8', '9', 'pass']
+AI played: 8
+Enter your rating (-10-10): 1
+Enter suggested action: 3
+
+Your hand: [4, 4, 6, 7, 7, 9]
+
+Ai hand: [1, 1, 3, 5, 6, 7, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [4, 4, 6, 7, 7]
+
+Ai hand: [1, 1, 3, 5, 6, 7, 9]
+
+our valid_actions:  ['4', '4', '6', '7', '7', '44', '77']
+
+Enter your action: 44
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [6, 7, 7]
+
+Ai hand: [1, 1, 3, 5, 6, 7, 9]
+
+our valid_actions:  ['6', '7', '7', '77']
+
+Enter your action: 77
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [6]
+
+Ai hand: [1, 1, 3, 5, 6, 7, 9]
+
+our valid_actions:  ['6']
+
+Enter your action: 6
+You win!
+Model saved as models/model_teach.pth
+Continue training? (y/n): y
+
+=== New Game ===
+
+Your hand: [1, 1, 2, 2, 2, 3, 4, 4, 8, 9]
+
+Ai hand: [1, 6, 6, 6, 7, 7, 8, 8, 9, 9]
+
+our valid_actions:  ['1', '1', '2', '2', '2', '3', '4', '4', '8', '9', '11', '22', '22', '44', '2221', '2221', '2223', '2224', '2224', '2228', '2229']
+
+Enter your action: 2223
+ai valid_actions:  ['6661', '6667', '6667', '6668', '6668', '6669', '6669', 'pass']
+AI played: 6668
+Enter your rating (-10-10): 3
+Enter suggested action: 6661
+
+Your hand: [1, 1, 4, 4, 8, 9]
+
+Ai hand: [1, 7, 7, 8, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '7', '7', '8', '9', '9', '77', '99']
+AI played: 8
+Enter your rating (-10-10): -4
+Enter suggested action: 1
+
+Your hand: [1, 1, 4, 4, 8, 9]
+
+Ai hand: [1, 7, 7, 9, 9]
+
+our valid_actions:  ['9', 'pass']
+
+Enter your action: 9
+ai valid_actions:  ['pass']
+AI played: pass
+Enter your rating (-10-10): -2
+Enter suggested action: pass
+
+Your hand: [1, 1, 4, 4, 8]
+
+Ai hand: [1, 7, 7, 9, 9]
+
+our valid_actions:  ['1', '1', '4', '4', '8', '11', '44']
+
+Enter your action: 11
+ai valid_actions:  ['77', '99', 'pass']
+AI played: 77
+Enter your rating (-10-10): 4
+Enter suggested action: 77
+
+Your hand: [4, 4, 8]
+
+Ai hand: [1, 9, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '9', '9', '99']
+AI played: 9
+Enter your rating (-10-10): 2
+Enter suggested action: 99
+
+Your hand: [4, 4, 8]
+
+Ai hand: [1, 9]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1', '9']
+AI played: 9
+Enter your rating (-10-10): 2
+Enter suggested action: 9
+
+Your hand: [4, 4, 8]
+
+Ai hand: [1]
+
+our valid_actions:  ['pass']
+
+Enter your action: pass
+ai valid_actions:  ['1']
+AI played: 1
+Enter your rating (-10-10): 3
+Enter suggested action: 1
+AI wins!
+Model saved as models/model_teach.pth
+Continue training? (y/n):

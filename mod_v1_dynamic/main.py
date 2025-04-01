@@ -6,20 +6,20 @@ import numpy as np
 import random
 
 # 全局参数
-num_episodes = 100  # 训练轮数
+num_episodes = 10000  # 训练轮数
 initial_gamma = 0.99  # 初始折扣因子
 gamma_decay = 0.999   # 折扣因子衰减率
-initial_epsilon = 0.1  # 初始探索率
+initial_epsilon = 0.5  # 初始探索率
 epsilon_decay = 0.995 # 探索率衰减率
-learning_rate = 0.001  # 学习率
+learning_rate = 0.0001  # 学习率
 
 # 奖励相关参数
-reward_invalid_action = -1  # 无效动作奖励，惩罚加重
+reward_invalid_action = -2  # 无效动作奖励，惩罚加重
 reward_pass_with_valid = -1  # 有有效动作时 pass 的奖励，惩罚加重
 reward_pass_without_valid = -0.5  # 无有效动作时 pass 的奖励
 reward_single_card = 1  # 出单牌奖励，适当提高
-reward_pair_card = 1  # 出对子奖励，适当提高
-reward_triple_with_single = 3  # 出三带一奖励，适当提高
+reward_pair_card = 3  # 出对子奖励，适当提高
+reward_triple_with_single = 5  # 出三带一奖励，适当提高
 reward_player_win = -10  # 玩家获胜奖励，惩罚加重
 reward_ai_win = 10  # AI 获胜奖励，奖励加重
 reward_pair_win_bonus = 5  # 对子获胜额外奖励，提高
